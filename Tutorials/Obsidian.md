@@ -28,10 +28,10 @@ Community plugin-ok:
 ## Obsidian with Git
 Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkronizációt valósítsunk meg, illetve, hogy egymás között oszthassunk meg egyszerűen jegyzeteket. Ehhez mindössze telepíteni és aktiválni kell az `Obsidian Git` plugin-t.
 
-### Beállítások
+### Git beállítások
 Azért, hogy minden ...
 
-### Repository beállítása
+### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
 1. Ha szeretnétek, akkor csináljatok egy saját repository-t valahova, ahol el tudjátok érni. **Figyelem!** Legyen már most létrehozva egy main branch, különben az Obsidian nem tud vele mit kezdeni.
 2. Keressétek meg az `Obsidian Git: Clone an existing remote repo` parancsot és válasszátok ki.
