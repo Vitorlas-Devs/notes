@@ -36,15 +36,6 @@ Community plugin-ok:
 ## Obsidian with Git
 Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkronizációt valósítsunk meg, illetve, hogy egymás között oszthassunk meg egyszerűen jegyzeteket. Ehhez mindössze telepíteni és aktiválni kell az `Obsidian Git` plugin-t.
 
-### Git beállítások
-Azért, hogy használhassátok a Git autentikációt igénylő funkcióit, meg kell majd adnotok pár adatot. Emellett mutatok néhány egyéb hasznos beállítást is, hogy kényelmesen mentsen mindent magától az Obsidian.
-
-Számítógépen a telepített git-ből kiszedi a belépési adatokat. Ehhez útmutatót itt találtok: <https://docs.github.com/en/get-started/quickstart/set-up-git>
-Ne felejtsétek el autentikálni is magatokat, ehhez itt van még segítség: <https://cli.github.com/manual/gh_auth_login>
-
-**Fontos!**
-A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresztül. Ehhez csinálnotok kell egy **`access token`**-t, és azt használni jelszónak.
-
 ### GitHub Access Token
 1. Lépjetek be GitHub-ra, és navigáljatok el ide: `Settings > Developer settings > Personal access tokens > Tokens (classic)`.
 2. Kattintsatok a `Generate new token` gombra és válasszátok ki a classic-ot.
@@ -53,6 +44,15 @@ A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresz
 5. Pipáljátok be a **`repo`**-t (*Full control of private repositories*). Más nem kell.
 6. Kattintsatok a `Generate token` gombra.
 7. Másoljátok ki a megjelenő token-t, és tegyétek el valahova, hogy utána lehessen használni.
+
+### Git beállítások
+Azért, hogy használhassátok a Git autentikációt igénylő funkcióit, meg kell majd adnotok pár adatot. Emellett mutatok néhány egyéb hasznos beállítást is, hogy kényelmesen mentsen mindent magától az Obsidian.
+
+Számítógépen a telepített git-ből kiszedi a belépési adatokat. Ehhez útmutatót itt találtok: <https://docs.github.com/en/get-started/quickstart/set-up-git>
+Ne felejtsétek el autentikálni is magatokat, ehhez itt van még segítség: <https://cli.github.com/manual/gh_auth_login>
+
+**Fontos!**
+A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresztül. Ehhez csinálnotok kell egy **`access token`**-t, és azt használni jelszónak.
 
 ### Beállítások
 Az Obsidian Git plugin beállításaiban az automatikus mentésekhez én ezeket állítottam be:
