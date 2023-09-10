@@ -29,7 +29,9 @@ Community plugin-ok:
 Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkronizációt valósítsunk meg, illetve, hogy egymás között oszthassunk meg egyszerűen jegyzeteket. Ehhez mindössze telepíteni és aktiválni kell az `Obsidian Git` plugin-t.
 
 ### Git beállítások
-Azért, hogy használhassátok a Git autentikációt igénylő funkcióit, meg kell majd adnotok
+Azért, hogy használhassátok a Git autentikációt igénylő funkcióit, meg kell majd adnotok pár adatot. Emellett mutatok néhány egyéb hasznos beállítást is, hogy kényelmesen mentsen mindent magától az Obsidian.
+
+Számítógépen a telepített git-ből kiszedi a belépési adatokat. Ehhez útmutatót itt találtok: 
 
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
