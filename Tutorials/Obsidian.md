@@ -29,12 +29,12 @@ Community plugin-ok:
 Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkronizációt valósítsunk meg, illetve, hogy egymás között oszthassunk meg egyszerűen jegyzeteket. Ehhez mindössze telepíteni és aktiválni kell az `Obsidian Git` plugin-t.
 
 ### Git beállítások
-Azért, hogy használhassátok a Git authorizációt igénylő 
+Azért, hogy használhassátok a Git autentikációt igénylő funkcióit, meg kell majd adnotok
 
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
 1. Ha szeretnétek, akkor csináljatok egy saját repository-t valahova, ahol el tudjátok érni. **Figyelem!** Legyen már most létrehozva egy main branch, különben az Obsidian nem tud vele mit kezdeni.
 2. Keressétek meg az `Obsidian Git: Clone an existing remote repo` parancsot és válasszátok ki.
 3. Illesszétek be a repository URL-jét. Ha szeretnétek a közös repo-t is használni, akkor annak a linkje: https://github.com/Vitorlas-Devs/Obsidian-Vitorla (Ne felejtsetek először hozzáférést kérni az organization-höz, illetve a repo-hoz.)
-4. Adjatok meg egy nevet a repo mappájának. Én azt tanácsolom, hogy ne a root-ba állítsátok, mert akkor úgy már egyrészt nem tudtok több repot beállítani a Vault-ba, másrészt a beállításaitokat is feltöltitek, ami lehet nem fog mindenkinek megfelelni. A közös repo-nak én azt a nevet adtam, hogy `Obsidian Vitorla`.
+4. Adjatok meg egy nevet a repo mappájának. Én azt tanácsolom, hogy ne a root-ba állítsátok, mert akkor úgy már egyrészt nem tudtok több repot beállítani a Vault-ba, másrészt a beállításaitokat is feltöltitek, ami lehet nem fog mindenkinek megfelelni, illetve ebben benne lesz az autentikációs kulcsotok. A közös repo-nak én azt a nevet adtam, hogy `Obsidian Vitorla`.
 5. Utolsó prompt-nál egy szimpla enter, aztán mikor kéri, indítsátok újra az Obsidian-t.
