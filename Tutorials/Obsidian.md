@@ -28,9 +28,10 @@ Core plugin-ok: Minden be van kapcsolva kivéve ezek:
 - Workspaces
 
 Community plugin-ok:
-
-![[Pasted image 20230910202428.png]]
-![[Pasted image 20230910202725.png]]
+![[Pasted image 20230910202915.png]]
+![[Pasted image 20230910202931.png]]
+![[Pasted image 20230910202944.png]]
+![[Pasted image 20230910203001.png]]
 
 ## Obsidian with Git
 Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkronizációt valósítsunk meg, illetve, hogy egymás között oszthassunk meg egyszerűen jegyzeteket. Ehhez mindössze telepíteni és aktiválni kell az `Obsidian Git` plugin-t.
