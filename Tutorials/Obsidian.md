@@ -31,6 +31,7 @@ Community plugin-ok:
 
 ![[Pasted image 20230910202428.png]]
 
+
 ## Obsidian with Git
 Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkronizációt valósítsunk meg, illetve, hogy egymás között oszthassunk meg egyszerűen jegyzeteket. Ehhez mindössze telepíteni és aktiválni kell az `Obsidian Git` plugin-t.
 
