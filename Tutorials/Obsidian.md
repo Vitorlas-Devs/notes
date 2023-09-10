@@ -31,8 +31,11 @@ Talán a Git a legegyszerűbb módja annak, hogy eszközök közötti szinkroniz
 ### Git beállítások
 Azért, hogy használhassátok a Git autentikációt igénylő funkcióit, meg kell majd adnotok pár adatot. Emellett mutatok néhány egyéb hasznos beállítást is, hogy kényelmesen mentsen mindent magától az Obsidian.
 
-Számítógépen a telepített git-ből kiszedi a belépési adatokat. Ehhez útmutatót itt találtok: 
+Számítógépen a telepített git-ből kiszedi a belépési adatokat. Ehhez útmutatót itt találtok: https://docs.github.com/en/get-started/quickstart/set-up-git
+Ne felejtsétek el autentikálni is magatokat, ehhez itt van még segítség: https://cli.github.com/manual/gh_auth_login
 
+**Fontos!**
+A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
 1. Ha szeretnétek, akkor csináljatok egy saját repository-t valahova, ahol el tudjátok érni. **Figyelem!** Legyen már most létrehozva egy main branch, különben az Obsidian nem tud vele mit kezdeni.
