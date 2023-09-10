@@ -38,9 +38,8 @@ Ne felejtsétek el autentikálni is magatokat, ehhez itt van még segítség: <h
 A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresztül. Ehhez csinálnotok kell egy **`access token`**-t, és azt használni jelszónak.
 
 ### GitHub Access Token
-1. Lépjetek be GitHub-ra.
-2. Menjetek a beállításokba.
-3. 
+1. Lépjetek be GitHub-ra, és navigáljatok el ide: `Settings > Developer settings > Personal access tokens > Tokens (classic)`.
+2. Kattintsatok a `Generate new token` gombra és válasszátok ki a classic-ot.
 
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
