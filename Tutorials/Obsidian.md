@@ -23,6 +23,7 @@ Core plugin-ok: Minden be van kapcsolva kivéve ezek:
 - Format converter
 - Publish
 - Sync
+- Unique note creator
 
 Community plugin-ok:
 
