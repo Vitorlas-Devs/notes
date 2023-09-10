@@ -22,7 +22,7 @@ Ha nem akartok keresgélni, akkor itt vannak, amiket Én telepítettem és aján
 Core plugin-ok: Minden be van kapcsolva kivéve ezek:
 - Format converter
 - Publish
-- 
+- Sync
 
 Community plugin-ok:
 
@@ -48,6 +48,8 @@ A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresz
 5. Pipáljátok be a **`repo`**-t (*Full control of private repositories*). Más nem kell.
 6. Kattintsatok a `Generate token` gombra.
 7. Másoljátok ki a megjelenő token-t, és tegyétek el valahova, hogy utána lehessen használni.
+
+### Beállítások
 
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
