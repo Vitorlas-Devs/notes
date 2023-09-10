@@ -1,3 +1,5 @@
+#tutorial #obsidian #git
+
 Ez alapvetően egy notepad, DE van benne markdown support, rengeteg plugin és tömérdek hasznos feature. Tudom ajánlani mindenkinek, aki telefonon/gépen szeretne egyetemen jegyzetelni.
 
 Egy nagyon jó ízelítőnek ajánlom megnézni ezt a videót: <https://youtu.be/DbsAQSIKQXk>
@@ -17,9 +19,10 @@ Minden beállítást, illetve plugin-t be kell állítani minden eszközön. Az 
 
 Ha nem akartok keresgélni, akkor itt vannak, amiket Én telepítettem és ajánlom, hogy Ti is:
 
-Core plugin-ok:
-
-*Képek helye... WIP*
+Core plugin-ok: Minden be van kapcsolva kivéve ezek:
+- Format converter
+- Publish
+- 
 
 Community plugin-ok:
 
