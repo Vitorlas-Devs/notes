@@ -55,7 +55,9 @@ A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresz
 7. Másoljátok ki a megjelenő token-t, és tegyétek el valahova, hogy utána lehessen használni.
 
 ### Beállítások
-
+Az Obsidian Git plugin beállításaiban az automatikus mentésekhez én ezeket állítottam be:
+![[Pasted image 20230910203816.png]]
+![[Pasted image 20230910203843.png]]
 
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
