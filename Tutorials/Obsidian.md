@@ -24,6 +24,8 @@ Core plugin-ok: Minden be van kapcsolva kivéve ezek:
 - Publish
 - Sync
 - Unique note creator
+- Word count
+- Workspaces
 
 Community plugin-ok:
 
