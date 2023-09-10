@@ -58,6 +58,7 @@ A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresz
 Az Obsidian Git plugin beállításaiban az automatikus mentésekhez én ezeket állítottam be:
 ![[Pasted image 20230910203816.png]]
 ![[Pasted image 20230910203843.png]]
+Lentebb a Commit Author szekcióban töltsétek ki a két kért adatot.
 
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
