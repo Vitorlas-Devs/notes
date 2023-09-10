@@ -58,8 +58,8 @@ A GitHub nem engedi, hogy szimplán a jelszavaitokkal lépjetek be Git-en keresz
 Az Obsidian Git plugin beállításaiban az automatikus mentésekhez én ezeket állítottam be:
 ![[Pasted image 20230910203816.png]]
 ![[Pasted image 20230910203843.png]]
-Lentebb a Commit Author szekcióban töltsétek ki a két kért adatot.
-Telefonon keresd meg az Autentikációhoz
+Lentebb a **`Commit Author`** szekcióban töltsétek ki a két kért adatot.
+Telefonon keressétek meg az **`Authentication/Commit Author`** szekciót, és írjátok be a felhasználóneveteket, illetve jelszónak a generált token-t.
 ### Repository klónozása
 VSCode-hoz hasonlóan az Obsidian-nak is van **Command Palette**-je, amit alapértelmezetten a `Ctrl + P` billentyű kombinációval lehet felhozni. Szinte mindent innen lehet elérni, és innen kell beállítani a Git repository-t is.
 1. Ha szeretnétek, akkor csináljatok egy saját repository-t valahova, ahol el tudjátok érni. **Figyelem!** Legyen már most létrehozva egy main branch, különben az Obsidian nem tud vele mit kezdeni.
