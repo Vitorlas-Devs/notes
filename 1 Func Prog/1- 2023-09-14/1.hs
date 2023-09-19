@@ -16,8 +16,8 @@ square x = x * x
 
 -- Polymporphism: the same function can be used with different types.
 -- Int and Integer are the same, but Integer is not bounded, while Int is bounded, which means that it has a maximum and minimum value.
-square :: Num a => a -> a
-square x = x * x
+-- square :: Num a => a -> a
+-- square x = x * x
 
 -- pow
 -- hatvány művelet nem **, hanem ^
