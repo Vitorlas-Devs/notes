@@ -1,10 +1,13 @@
-# WELOME TO VITORLÁS NOTES MONOREPO
+<h1 align="left">
+  WELCOME TO VITORLÁS NOTES MONOREPO
+  <img align="right" height="150px" src="https://github.com/Vitorlas-Devs/notes/assets/36823200/7a962c6e-f75b-41d7-a2fa-fc02f537d5f9" />
+</h1>
+
+Ajánlott szoftver: **Obsidian** vagy **VS Code + GitHub Desktop**
 
 - mindenkinek külön branch névre
 - onnan pull request mindig a mainbe
 - a main az összesített anyagokat tartalmazza
-
-- **Ajánlott szoftver: Obsidian vagy VS Code**
 
 ## Felépítés
 
