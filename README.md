@@ -1,8 +1,10 @@
 # WELOME TO VITORLÁS NOTES MONOREPO
 
-- külön branch névre
+- mindenkinek külön branch névre
 - onnan pull request mindig a mainbe
-- a main az az összesített az egyes emberek brancheiből
+- a main az összesített anyagokat tartalmazza
+
+- **Ajánlott szoftver: Obsidian vagy VS Code**
 
 ## Felépítés
 
@@ -12,10 +14,10 @@
 ├─ README.md - # Ez a fájl, infók
 ├─ CODEOWNERS - # Egyes tárgyak felelősei
 ├─ Tutorials/* - # Egyéb tutoriálok
-│  └─ Obsidian.md - # 
-├─ Pasted images/* - # images for the 
-├─ Homework/* - # homeworks
-│  └─ [Week number].md - # homeworks
+│  └─ Obsidian.md - # Obsidian tutorial
+├─ Pasted images/* - # Képek
+├─ Home/* - # házi feladatok
+│  └─ [Week number].md - # heti házik összeszedve
 ```
 
 ### Notes structure
@@ -30,7 +32,7 @@
 ### Lesson markdown structure
 
 ```md
-# [Subject name] [Lesson number]. óra: [Lesson name]
+# [Lesson]
 
 ## 1. [Fejezet]
 
@@ -42,6 +44,8 @@ Táblázat:
 | Fejléc 1 | Fejléc 2 |
 | -------- | -------- |
 | Tartalom | Tartalom |
+| Tartalom | Tartalom |
+|
 
 Link: TODO
 ```
