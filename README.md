@@ -9,6 +9,9 @@ Ajánlott szoftver: **Obsidian** vagy **VS Code + GitHub Desktop**
 - onnan pull request mindig a mainbe
 - a main az összesített anyagokat tartalmazza
 
+> **Warning**
+> A saját branch-edet frissíteni kell ha a `main` újabb, és meg szeretnéd kapni azokat a változtatásokat
+
 ## Felépítés
 
 ### Monorepo structure
