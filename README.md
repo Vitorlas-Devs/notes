@@ -3,7 +3,7 @@
   <img align="right" height="150px" src="https://github.com/Vitorlas-Devs/notes/assets/36823200/7a962c6e-f75b-41d7-a2fa-fc02f537d5f9" />
 </h1>
 
-Ajánlott szoftver: **Obsidian** vagy **VS Code + GitHub Desktop**
+Ajánlott szoftver: **[Obsidian](https://obsidian.md/)** vagy **VS Code + [GitHub Desktop](https://desktop.github.com/)**
 
 - mindenkinek külön branch névre
 - onnan pull request mindig a mainbe
