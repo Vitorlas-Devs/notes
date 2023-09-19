@@ -57,4 +57,4 @@ Link: TODO
 
 1. Kell egy saját branch a saját neveddel
 2. A `main` branch a fő branch amibe már átnézett anyagok kerülnek be, **és csak pull request** után
-3. A saját branchből lehet pull requestet nyitni a mainbe, a `CODEOWNERS` fájl mutatja hogy kinek kell review-olnia mielőtt mergelni lehet
+3. A saját branchből lehet pull requestet nyitni a mainbe, a [`CODEOWNERS`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) fájl mutatja hogy kinek kell review-olnia mielőtt mergelni lehet
