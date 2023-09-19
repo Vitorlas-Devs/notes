@@ -23,5 +23,54 @@ square x = x * x
 -- hatvány művelet nem **, hanem ^
 -- Num a => a -> a -> a: két paramétert vár, és egyet ad vissza
 -- A paramétereket ugyanúgy '->'-al választjuk el, mint a return értéket
-pow :: Num a => a -> a -> a
+pow :: (Num a, Integral a) => a -> a -> a
 pow i j = i ^ j
+
+-- leap year function
+
+leapYear :: Int -> Bool
+leapYear year = (year `mod` 4 == 0) && 
+                (year `mod` 100 /= 0) || 
+                (year `mod` 400 == 0)
+
+-- Num typeclass
+tst :: Num a => a -> a
+tst a = a + 1
+
+-- We can call functions like this:
+
+inc2 :: Int -> Int
+inc2 a = inc (inc a)
+
+-- Infix, prefix, and postfix
+
+-- Infix
+-- this is useful when we want to use operators as functions
+
+inc' :: Int -> Int
+inc' a = (+) a 1
+
+divs' :: Int -> Int
+divs' a = div a 2
+
+-- Prefix
+-- this is useful when we want to use functions as operators
+
+divs :: Int -> Int
+divs a = a `div` 2
+
+-- Recursion
+
+-- sum of a list of numbers
+sum' :: Num a => [a] -> a
+sum' [] = 0
+sum' (x:xs) = x + sum' xs
+
+-- same as above, but with foldr
+sum'' :: Num a => [a] -> a
+sum'' = foldr (+) 0
+
+-- sum of all numers from 1 to n
+sum2 :: (Eq n, Num n) => n -> n
+sum2 0 = 0
+sum2 n = n + sum2 (n - 1)
