@@ -3,7 +3,10 @@
     "allowed_elements": [
       "details",
       "summary",
-      "b"
+      "b",
+      "i",
+      "div",
+      "img"
     ]
   },
   "MD013": {
