@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-#include "../lib/utils.h"
+#include "../../lib/utils.h"
 
 int func(void);
 
