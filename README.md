@@ -54,6 +54,14 @@ Táblázat:
 |
 
 Link: TODO
+
+Dropdown:
+The `open` tag is optional, it means that the dropdown is open by default
+<details open>
+<summary><b>Title of dropdown</b></summary>
+
+Content of dropdown
+</details>
 ```
 
 ## Workflow
