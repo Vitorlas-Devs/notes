@@ -267,6 +267,11 @@ Pont p = new Pont();
 
 - Több azonos típusú adat tárolása.
 
+### Specifikáció
+
+- `teendők ∈ S[1..5]`: Összes lehetséges 5 elemű szövegből álló sorozat halmaza
+- `teendők[1]`: Az első elem a teendők tömbben
+
 ### Feladat tömbre: Japán naptár - 10
 
 - Írj programot amely megadja egy M évről (1984<=M<=2043) hogy milyen színű (a japán naptár szerint)!
