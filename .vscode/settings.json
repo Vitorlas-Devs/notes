@@ -1,5 +1,14 @@
 {
   "files.associations": {
     "utils.h": "c"
+  },
+  "omnisharp.enableEditorConfigSupport": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "dotnet-test-explorer.testProjectPath": "tests",
+  "files.exclude": {
+    // "**/bin": true,
+    // "**/obj": true
+    "1 Programozás/**/**/bin": true,
+    "1 Programozás/**/**/obj": true
   }
 }

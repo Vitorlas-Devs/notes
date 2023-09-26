@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gyak2", "Gyak2.csproj", "{54AC3B93-08B9-466C-AF91-DCEEC74942B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gyak3", "..\Gyak3\Gyak3.csproj", "{17C81BA4-0975-4861-9DA5-77D33A71D35D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gyak4", "..\Gyak4\Gyak4.csproj", "{1CE8E5C5-9DCD-41D6-B8E6-46131A53DC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faktoriális", "..\Faktoriális\Faktoriális.csproj", "{6246E2CD-C289-45C4-8A14-B611748D900A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OszthatókkÁtlaga", "..\OszthatókkÁtlaga\OszthatókkÁtlaga.csproj", "{C3968AA7-C093-4BFE-AF91-1B3B9DE5CA81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KözösOsztó", "..\KözösOsztó\KözösOsztó.csproj", "{ADBADD73-DF80-4E4D-8587-470F426CD15E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Másodfokú", "..\Másodfokú\Másodfokú.csproj", "{697896D5-1E9E-4B86-95E6-DF0AFE85178D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AC3B93-08B9-466C-AF91-DCEEC74942B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AC3B93-08B9-466C-AF91-DCEEC74942B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AC3B93-08B9-466C-AF91-DCEEC74942B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AC3B93-08B9-466C-AF91-DCEEC74942B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C81BA4-0975-4861-9DA5-77D33A71D35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C81BA4-0975-4861-9DA5-77D33A71D35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C81BA4-0975-4861-9DA5-77D33A71D35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C81BA4-0975-4861-9DA5-77D33A71D35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE8E5C5-9DCD-41D6-B8E6-46131A53DC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE8E5C5-9DCD-41D6-B8E6-46131A53DC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE8E5C5-9DCD-41D6-B8E6-46131A53DC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE8E5C5-9DCD-41D6-B8E6-46131A53DC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6246E2CD-C289-45C4-8A14-B611748D900A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6246E2CD-C289-45C4-8A14-B611748D900A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6246E2CD-C289-45C4-8A14-B611748D900A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6246E2CD-C289-45C4-8A14-B611748D900A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3968AA7-C093-4BFE-AF91-1B3B9DE5CA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3968AA7-C093-4BFE-AF91-1B3B9DE5CA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3968AA7-C093-4BFE-AF91-1B3B9DE5CA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3968AA7-C093-4BFE-AF91-1B3B9DE5CA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBADD73-DF80-4E4D-8587-470F426CD15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBADD73-DF80-4E4D-8587-470F426CD15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBADD73-DF80-4E4D-8587-470F426CD15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBADD73-DF80-4E4D-8587-470F426CD15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697896D5-1E9E-4B86-95E6-DF0AFE85178D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697896D5-1E9E-4B86-95E6-DF0AFE85178D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697896D5-1E9E-4B86-95E6-DF0AFE85178D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697896D5-1E9E-4B86-95E6-DF0AFE85178D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B063BC3-9925-4046-9BAF-37FF9B3B63DD}
+	EndGlobalSection
+EndGlobal
