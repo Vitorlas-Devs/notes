@@ -1,6 +1,8 @@
 {
   "files.associations": {
-    "utils.h": "c"
+    "utils.h": "c",
+    "fcntl.h": "c",
+    "stdio.h": "c"
   },
   "omnisharp.enableEditorConfigSupport": true,
   "omnisharp.enableRoslynAnalyzers": true,
