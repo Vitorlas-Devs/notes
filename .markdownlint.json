@@ -5,12 +5,11 @@
       "summary",
       "b",
       "i",
+      "u",
       "div",
       "img"
     ]
   },
-  "MD013": {
-    "line_length": 120
-  },
+  "MD013": false,
   "MD036": false
 }
