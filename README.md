@@ -22,8 +22,6 @@ Ajánlott szoftver: **[Obsidian](https://obsidian.md/)** vagy **VS Code + [GitHu
 ├─ Tutorials/* - # Egyéb tutoriálok
 │  └─ Obsidian.md - # Obsidian tutorial
 ├─ Pasted images/* - # Képek
-├─ Home/* - # házi feladatok
-│  └─ [Week number].md - # heti házik összeszedve
 ```
 
 ### Notes structure
