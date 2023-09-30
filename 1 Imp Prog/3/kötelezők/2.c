@@ -8,7 +8,7 @@ int main()
 
   // bad, gives warning
   if (a < b < c)
-    printf("This is %s because a < b < c\n", a < b < c ? "true" : "false");
+    printf("This is %s because (a < b) < c\n", a < b < c ? "true" : "false");
 
   // good
   if (a < b && b < c)
