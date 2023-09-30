@@ -5,7 +5,7 @@ int var;
 int main()
 {
   // reference an external (global) variable
-  extern var;
+  extern int var;
 
   // print var's value uninitialized
   // var's value without initialization is 0

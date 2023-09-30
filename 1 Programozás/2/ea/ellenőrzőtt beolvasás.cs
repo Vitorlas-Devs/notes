@@ -1,6 +1,7 @@
 // Ellenőrzött beolvasás
 
 bool jo;
+int n;
 
 do
 {

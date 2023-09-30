@@ -21,17 +21,20 @@ Ajánlott szoftver: **[Obsidian](https://obsidian.md/)** vagy **VS Code + [GitHu
 ├─ CODEOWNERS - # Egyes tárgyak felelősei
 ├─ Tutorials/* - # Egyéb tutoriálok
 │  └─ Obsidian.md - # Obsidian tutorial
-├─ Pasted images/* - # Képek
+└─ Pasted images/* - # Képek
 ```
 
 ### Notes structure
 
 ```graphql
-├─ [Semester] [Subject name]/* - # subject name
-│  ├─ [Lesson number] - [Date]/* - # lesson number
-│  │  ├─ [Lesson number].md - # lesson notes
-│  │  ├─ [Other files] - # other files like code
+└─ [Semester] [Subject name]/* - # tárgyak szemeszterre lebontva
+    └─ [Week number]/* - # minden hét külön mappában
+      ├─ gyak.md - # gyakorlati anyagok (lehet source code is)
+      └─ ea.md - # előadás anyagok
 ```
+
+> **Warning**
+> Ha egy tárgy más struktúrát követel, akkor a mappájában van egy `README.md` fájl, és az felülírja ezt.
 
 ### Lesson markdown structure
 
@@ -52,6 +55,14 @@ Táblázat:
 |
 
 Link: TODO
+
+Dropdown:
+The `open` tag is optional, it means that the dropdown is open by default
+<details open>
+<summary><b>Title of dropdown</b></summary>
+
+Content of dropdown
+</details>
 ```
 
 ## Workflow

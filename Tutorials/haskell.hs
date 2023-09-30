@@ -1,4 +1,6 @@
 import Control.Concurrent
+import System.IO
+    ( hClose, hGetContents, openFile, IOMode(ReadMode) )
 
 -- | This is the Ultimate Haskell Tutorial
 -- this tutorial is for programmers who are just new to haskell
@@ -21,7 +23,6 @@ import Control.Concurrent
 -- 1.12 Basic type variables
 -- 1.13 Basic type inference
 -- 1.14 Basic type checking
--- 1.15 Basic type errors
 
 -- 2. Intermediate Haskell
 -- 2.1 Function types
@@ -258,10 +259,72 @@ head' (x:_) = x
 -- the ':' is the cons operator, it is used to add an element to the front of a list,
 -- in this case, it is used to match the first element of the list
 
--- | 1.14 Basic type inference
+-- | 1.13 Basic type inference
 
 -- Type inference is the process of figuring out the type of a value
 -- It is done by the compiler, and it is very useful because it saves you from having to write type declarations
 -- For example, we can create a function that takes a list of any number and returns the first element:
 head'' :: Num a => [a] -> a
 head'' (x:_) = x
+
+-- | 1.14 Basic type checking
+
+-- Type checking is the process of checking if a value is of a certain type
+-- In haskell, this is done by the compiler, and it is very useful because it saves you from having to write type declarations
+-- As the language has static typing, this is done at compile time, so you can't have type errors at runtime
+-- For example, we can create a function that takes a string and tries to add it to an integer:
+
+-- addString :: String -> Int -> Int
+-- addString a b = a + b
+
+-- this will not compile, because you can't add a string to an integer:
+-- Couldn't match type ‘[Char]’ with ‘Int’
+--   Expected: Int
+--     Actual: String
+
+-- | 2. Intermediate Haskell
+
+-- We will work with this example that reads a file:
+readFile :: FilePath -> IO String
+readFile path = do
+    handle <- openFile path ReadMode
+    contents <- hGetContents handle
+    hClose handle
+    return contents
+
+-- | 2.1 Function types
+
+-- The type of the readFile function is defined in the first line
+
+-- Parameter type: FilePath
+-- Return type: IO String, which means that it is an IO action that returns a String
+
+-- FilePath is a type synonym for String, it is used to represent a file path
+-- IO is a type constructor, it is used to represent an IO action
+-- String is a type synonym for [Char], it is the file contents
+
+-- | 2.2 Function definitions
+
+-- The readFile function is defined starting from the second line
+-- The 'do' keyword is used to define a block of code that is executed in order
+-- The '<-' operator is used to assign the result of an action to a variable
+-- The 'return' keyword is used to return a value from a function
+
+-- | 2.3 Function application
+
+-- The readFile function works like this:
+-- 1. It opens the file at the given path by calling the openFile function with the path and the ReadMode, and assigns the result to the variable 'handle'
+-- 2. It reads the contents of the file by calling the hGetContents function with the handle, and assigns the result to the variable 'contents'
+-- 3. It closes the file, closing files is important because it frees up resources
+-- 4. It returns the contents of the file
+
+-- | 2.4 Function composition
+
+-- Function composition is the process of combining functions together
+-- For example, we can create a function that reads a file and prints it to the console:
+readAndPrintFile :: FilePath -> IO ()
+readAndPrintFile path = do
+    contents <- Main.readFile path
+    putStrLn contents
+
+-- In this function we used the readFile function that we defined earlier
