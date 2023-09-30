@@ -12,8 +12,7 @@
 
 // This function sets the output to UTF-8
 
-// ⚠️ This only works as long as you are not printing variables
-// with the % format specifier.
+// ⚠️ This only works as long as you are not printing variables with the % format specifier.
 
 void setUTF8() {
   _setmode(_fileno(stdout), _O_U16TEXT);

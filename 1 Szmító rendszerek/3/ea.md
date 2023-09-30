@@ -93,3 +93,49 @@ other::r--
 - az ezutáni sorok a többi jogosultságot jelentik
 - a `mask` rész a maszkot jelenti, ami az umask értékétől függ, ezek azok a jogosultságok, amelyeket a rendszer kizár a többi felhasználó számára
 - az `other` rész a többi felhasználó jogosultságait jelenti (akik nem a tulajdonosok és nem a csoport tagjai)
+
+## Parancsfuttatás a háttérben
+
+Ha a parancsot a `&` karakterrel zárjuk, akkor a parancs a háttérben fut le, és a terminálunk továbbra is használható lesz.
+
+### `sleep` parancs
+
+A `sleep` parancs a megadott másodpercekig várakozik, majd leáll. Ha a `sleep` parancsot a `&` karakterrel zárjuk, akkor a parancs a háttérben fut le.
+
+```bash
+$ sleep 10 &
+[1] 1234
+$ echo "Hello"
+Hello
+```
+
+- első sorban a `sleep 10` parancsot futtattuk a háttérben, majd a `&` után megjelenik egy `[1] 1234` szöveg. Ez a `[1]` jelzi, hogy a `sleep 10` parancs az első háttérben futó parancsunk, a `1234` pedig a parancs PID-je (Process ID).
+- ezután kiírjuk a `Hello` szöveget, ami a `sleep 10` parancs leállása után jelenik meg.
+
+## Folyamatok
+
+A folymatok a háttérben futó parancsok. Amikor kijelentkezünk, a folyamatok leállnak.
+
+### `nice` és `top` parancsok
+
+A `nice` parancs segítségével a parancsok prioritását állíthatjuk be. A `top` parancs segítségével pedig a futó folyamatokat listázhatjuk ki.
+
+```bash
+$ nice -n 19 sleep 10 &
+[1] 1234
+$ top
+
+top - 12:34:56 up  1:23,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  95 total,   1 running,  94 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7841.9 total,   1067.8 free,   4608.4 used,   2165.7 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   2618.8 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1234 user      19  19       0      0      0 S   0.0   0.0   0:00.00 sleep
+```
+
+- a `nice -n 19` paranccsal a `sleep 10` parancs prioritását állítottuk be 19-re. A `top` parancs kimenetében a `PR` oszlopban látható, hogy a `sleep 10` parancs prioritása 19.
+- a `top` parancs kimenete kiírja a `sleep 10` parancs PID-jét is, ami a `PID` oszlopban látható.
+
+### `kill` parancs
