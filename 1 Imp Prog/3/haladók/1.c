@@ -29,8 +29,8 @@ int main()
   max = pow(10, difficulty);
   number = rand() % max + 1;
 
-  // DEBUG
-  printf("Number: %d\n", number);
+  // // DEBUG
+  // printf("Number: %d\n", number);
 
   printf("Mode: %s\n", options[difficulty - 1]);
 
