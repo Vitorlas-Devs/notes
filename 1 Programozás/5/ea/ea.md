@@ -337,7 +337,6 @@ fn növel(a: &mut i32, b: i32) -> i32 {
 fn main() {
     let mut a: i32;
     let b: i32;
-    let c: i32;
 
     print!("a = ");
     a = read!();
@@ -345,8 +344,8 @@ fn main() {
     print!("b = ");
     b = read!();
 
-    c = növel(&mut a, b);
+    növel(&mut a, b);
 
-    println!("c = {c}");
+    println!("a = {a}");
 }
 ```
