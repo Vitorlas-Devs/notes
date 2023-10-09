@@ -12,15 +12,25 @@ int main()
 {
   srand(time(NULL));
 
-  int number;                                               // The number to guess
-  int guesses;                                              // An accumulator for the number of guesses
-  int difficulty;                                           // The difficulty level
-  int max;                                                  // Upper bound for the random number
-  char *options[] = {"Easy", "Medium", "Hard", "HARDCORE"}; // The options for the dropdown menu
+  int number;     // The number to guess
+  int guesses;    // An accumulator for the number of guesses
+  int difficulty; // The difficulty level
+  int max;        // Upper bound for the random number
+
+  // simple options:
+  // char *options[] = {"Easy", "Medium", "Hard", "HARDCORE"}; // The options for the dropdown menu
+  
+  // colorful options:
+
+  struct ColorString options[] = {
+      {"Easy", 32},
+      {"Medium", 33},
+      {"Hard", 31},
+      {"HARDCORE", 35}};
 
   printf("Choose difficulty:\n\n");
 
-  difficulty = dropdown(options, 4, 0);
+  difficulty = dropdownColorful(options, 4, 0);
 
   if (difficulty == -1)
     return -1;
@@ -32,7 +42,7 @@ int main()
   // // DEBUG
   // printf("Number: %d\n", number);
 
-  printf("Mode: %s\n", options[difficulty - 1]);
+  printf("Mode: %s\n", options[difficulty - 1].string);
 
   guesses = guessing(number, max);
 

@@ -7,8 +7,6 @@
 #define DOWN 80
 #define ENTER 13
 
-// create a detailed markdown IDE popup for the dropdown function:
-
 // # Dropdown
 // A function that creates a dropdown menu with the given options and returns the selected option
 //
@@ -73,4 +71,83 @@ int dropdown(
   }
 
   return selected; // Return the index of the selected option
+}
+
+struct ColorString
+{
+  char *string;
+  int color;
+};
+
+// # DropdownColorful
+// A function that creates a dropdown menu with the given color options and returns the selected option
+//
+// ## Parameters
+// - `options`: An array of ColorString structs containing the options and their colors to display
+// - `num_options`: The number of options in the array
+// - `selected`: The index of the option to select by default
+//
+// ```c
+// struct ColorString
+// {
+//   char *string;
+//   int color;
+// };
+// ```
+//
+// ## Returns
+// The index of the selected option
+//
+// ## Example
+// ```c
+// struct ColorString options[] = {{"Red", 31}, {"Green", 32}, {"Blue", 34}};
+// int selected = dropdownColorful(options, 3, 0);
+// printf("You selected: %s\n", options[selected].string);
+// ```
+//
+// ## Acknowledgements
+// This function was created by GPT-4 (Bing)
+int dropdownColorful(
+    struct ColorString options[],
+    int num_options,
+    int selected)
+{
+  int key;
+
+  while (1)
+  {
+    for (int i = 0; i < num_options; i++)
+    {
+      if (i == selected)
+        printf(ESC "[%dm" ESC "[7m %s " ESC "[0m\n", options[i].color, options[i].string);
+      else
+        printf(ESC "[%dm %s " ESC "[0m\n", options[i].color, options[i].string);
+    }
+
+    key = _getch();
+
+    if (key == 0 || key == 224)
+      key = _getch();
+
+    if (key == UP)
+    {
+      selected--;
+      if (selected < 0)
+        selected = num_options - 1;
+    }
+    else if (key == DOWN)
+    {
+      selected++;
+      if (selected >= num_options)
+        selected = 0;
+    }
+    else if (key == ENTER)
+      break;
+    else if (key == 27)
+      return -1;
+
+    printf(ESC "[%dA", num_options);
+  }
+
+  return selected;
 }
