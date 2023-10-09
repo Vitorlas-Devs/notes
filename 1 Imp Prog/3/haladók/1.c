@@ -30,7 +30,7 @@ int main()
 
   printf("Choose difficulty:\n\n");
 
-  difficulty = dropdownColorful(options, 4, 0);
+  difficulty = dropdownColorful(options, 4, 0, 1);
 
   if (difficulty == -1)
     return -1;
