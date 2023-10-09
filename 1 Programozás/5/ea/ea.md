@@ -187,23 +187,20 @@ Console.WriteLine($"y = {y}");
 ```
 
 ```rs
-use std::io;
+use text_io::read;
 
 fn négyzet(n: f64) -> f64 {
     n * n
 }
 
 fn main() {
-    let mut x = String::new();
-    let mut y: f64;
+    let x: f64;
+    let y: f64;
 
     print!("x = ");
+    x = read!();
 
-    io::stdin()
-      .read_line(&mut x)
-      .expect("Hiba az adatbevitel során!");
-
-    y = négyzet(x.trim().parse().expect("Hiba az adatbevitel során!"));
+    y = négyzet(x);
 
     println!("y = {y}");
 }
@@ -258,7 +255,7 @@ Console.WriteLine($"m = {m}");
 ```
 
 ```rs
-use std::io;
+use text_io::read;
 
 fn max(a: i32, b: i32) -> i32 {
     if a >= b {
@@ -269,22 +266,17 @@ fn max(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
-    let mut a = String::new();
-    let mut b = String::new();
-    let mut m: i32;
+    let a: i32;
+    let b: i32;
+    let m: i32;
 
     print!("a = ");
-    io::stdin()
-      .read_line(&mut a)
-      .expect("Hiba az adatbevitel során!");
+    a = read!();
 
     print!("b = ");
-    io::stdin()
-      .read_line(&mut b)
-      .expect("Hiba az adatbevitel során!");
+    b = read!();
 
-    m = max(a.trim().parse().expect("Hiba az adatbevitel során!"),
-            b.trim().parse().expect("Hiba az adatbevitel során!"));
+    m = max(a, b);
 
     println!("m = {m}");
 }
@@ -335,34 +327,26 @@ Console.WriteLine($"c = {c}");
 ```
 
 ```rs
-use std::io;
+use text_io::read;
 
-fn növel(&mut a: i32, b: i32) -> i32 {
-    a += b;
-    a
+fn növel(a: &mut i32, b: i32) -> i32 {
+    *a += b;
+    *a
 }
 
 fn main() {
-    let mut a = String::new();
-    let mut b = String::new();
-    let mut c: i32;
+    let mut a: i32;
+    let b: i32;
+    let c: i32;
 
     print!("a = ");
-    io::stdin()
-      .read_line(&mut a)
-      .expect("Hiba az adatbevitel során!");
+    a = read!();
 
     print!("b = ");
-    io::stdin()
-      .read_line(&mut b)
-      .expect("Hiba az adatbevitel során!");
+    b = read!();
 
-    c = növel(a.trim().parse().expect("Hiba az adatbevitel során!"),
-              b.trim().parse().expect("Hiba az adatbevitel során!"));
+    c = növel(&mut a, b);
 
     println!("c = {c}");
 }
 ```
-
-### 4. Csere
-
