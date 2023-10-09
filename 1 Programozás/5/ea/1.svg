@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390.6" height="148" viewBox="0 0 585.9 222" preserveAspectRatio="xMinYMin meet">
+<metadata>
+<structo:source xmlns:structo="https://nigjo.github.io/structogramview/">
+<![CDATA[melyik := 2
+FOR: melyik = 2..n and midő(melyik) >= midő(melyik-1)
+  melyik := melyik + 1
+ENDFOR:
+van := melyik <= n]]>
+</structo:source>
+</metadata>
+<style>
+svg{stroke:none;stroke-width:1px;fill:white;}
+line{stroke:black;}
+text{font-family:sans-serif;fill:black;}
+.comment&gt;text{font-style:italic;fill:gray;}
+.whiteShadow{fill:none !important;stroke:white;stroke-width:2px;}
+.casevalue,.blocktitle{fill:gray;font-size:75%;font-style:italic;}
+.caption{font-weight:bold;font-size:1.25em;}
+svg{font-size:24px}</style>
+<style class="darkreader darkreader--sync" media="screen"/>
+<g class="diagram" transform="translate(0,0)">
+<rect width="585.9" height="222"/>
+<g class="sequence" transform="translate(12,12)">
+<line x1="561.9" y1="0" x2="561.9" y2="49.2"/>
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="561.9" y2="0"/>
+<text x="6" y="33" textLength="115.5">melyik := 2</text>
+</g>
+<g class="for" transform="translate(12,61.2)">
+<line x1="561.9" y1="0" x2="561.9" y2="98.4"/>
+<line x1="0" y1="0" x2="0" y2="98.4"/>
+<line x1="0" y1="0" x2="561.9" y2="0"/>
+<text x="12" y="33" textLength="523.5">melyik = 2..n and midő(melyik) &gt;= midő(melyik-1)</text>
+<g class="block" transform="translate(37.2,49.2)">
+<g class="sequence" transform="translate(0,0)">
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="523.5" y2="0"/>
+<text x="6" y="33" textLength="210">melyik := melyik + 1</text>
+</g>
+</g>
+</g>
+<g class="sequence" transform="translate(12,159.6)">
+<line x1="561.9" y1="0" x2="561.9" y2="50.4"/>
+<line x1="0" y1="0" x2="0" y2="50.4"/>
+<line x1="0" y1="0" x2="561.9" y2="0"/>
+<line x1="0" y1="50.4" x2="561.9" y2="50.4"/>
+<text x="6" y="33" textLength="195">van := melyik &lt;= n</text>
+</g>
+</g>
+</svg>

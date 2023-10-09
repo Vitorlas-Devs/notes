@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="152.8" viewBox="0 0 504 229.2" preserveAspectRatio="xMinYMin meet">
+<metadata>
+<structo:source xmlns:structo="https://nigjo.github.io/structogramview/">
+<![CDATA[db := 0
+FOR: i = 1..n div 2
+  IF: n mod i = 0
+    db := db + 1
+  ENDIF:
+ENDFOR:]]>
+</structo:source>
+</metadata>
+<style>
+svg{stroke:none;stroke-width:1px;fill:white;}
+line{stroke:black;}
+text{font-family:sans-serif;fill:black;}
+.comment&gt;text{font-style:italic;fill:gray;}
+.whiteShadow{fill:none !important;stroke:white;stroke-width:2px;}
+.casevalue,.blocktitle{fill:gray;font-size:75%;font-style:italic;}
+.caption{font-weight:bold;font-size:1.25em;}
+svg{font-size:24px}</style>
+<style class="darkreader darkreader--sync" media="screen"/>
+<g class="diagram" transform="translate(0,0)">
+<rect width="504" height="229.2"/>
+<g class="sequence" transform="translate(12,12)">
+<line x1="480" y1="0" x2="480" y2="49.2"/>
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<text x="6" y="33" textLength="73.5">db := 0</text>
+</g>
+<g class="for" transform="translate(12,61.2)">
+<line x1="480" y1="0" x2="480" y2="156"/>
+<line x1="0" y1="0" x2="0" y2="156"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<line x1="0" y1="156" x2="480" y2="156"/>
+<text x="12" y="33" textLength="130.5">i = 1..n div 2</text>
+<g class="block" transform="translate(37.2,49.2)">
+<g class="if" transform="translate(0,0)">
+<line x1="0" y1="0" x2="0" y2="105.6"/>
+<line x1="0" y1="0" x2="441.6" y2="0"/>
+<line x1="0" y1="0" x2="290.78" y2="55.2"/>
+<line x1="290.78" y1="55.2" x2="441.6" y2="0"/>
+<text x="160.5" y="27" textLength="120" class="whiteShadow">n mod i = 0</text>
+<text x="160.5" y="27" textLength="120">n mod i = 0</text>
+<g class="then" transform="translate(1.2,55.2)">
+<text x="4.5" y="-6" textLength="31.5" class="blocktitle">true</text>
+<g class="sequence" transform="translate(0,0)">
+<line x1="-1.5" y1="0" x2="290.78" y2="0"/>
+<line x1="0" y1="50.4" x2="289.28" y2="50.4"/>
+<text x="6" y="33" textLength="127.5">db := db + 1</text>
+</g>
+</g>
+<g class="else" transform="translate(290.47,55.2)">
+<line x1="0" y1="0" x2="0" y2="50.4"/>
+<text x="107.38" y="-6" textLength="37.5" class="blocktitle">false</text>
+<g class="sequence" transform="translate(1.2,0)">
+<line x1="-1.5" y1="0" x2="151.41" y2="0"/>
+<line x1="0" y1="50.4" x2="149.91" y2="50.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
