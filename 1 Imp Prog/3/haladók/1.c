@@ -17,20 +17,22 @@ int main()
   int difficulty; // The difficulty level
   int max;        // Upper bound for the random number
 
-  // simple options:
-  // char *options[] = {"Easy", "Medium", "Hard", "HARDCORE"}; // The options for the dropdown menu
-  
-  // colorful options:
-
   struct ColorString options[] = {
       {"Easy", 32},
       {"Medium", 33},
       {"Hard", 31},
       {"HARDCORE", 35}};
+  
+  union Option optionUnions[4];
+
+  for (int i = 0; i < 4; i++)
+  {
+    optionUnions[i].colorString = options[i];
+  }
 
   printf("Choose difficulty:\n\n");
 
-  difficulty = dropdownColorful(options, 4, 0, 1);
+  difficulty = dropdown(optionUnions, 4, 0, 1);
 
   if (difficulty == -1)
     return -1;

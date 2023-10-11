@@ -19,35 +19,37 @@ union Option
   struct ColorString colorString; // A ColorString struct for colorful options
 };
 
-// # Dropdown
-// A function that creates a dropdown menu with the given options and returns the selected option
-//
-// ## Parameters
-// - `options`: An array of Option unions containing the options to display
-// - `num_options`: The number of options in the array
-// - `selected`: The index of the option to select by default
-// - `colorful`: A flag to indicate whether the options are colorful or not
-//
-// ## Returns
-// The index of the selected option
-//
-// ## Example
-// ```c
-// union Option options[] = {{"Option 1"}, {"Option 2"}, {"Option 3"}};
-// int selected = dropdown(options, 3, 0, 0);
-// printf("You selected: %s\n", options[selected].string);
-//
-// struct ColorString colorOptions[] = {{"Red", 31}, {"Green", 32}, {"Blue", 34}};
-// for (int i = 0; i < 3; i++)
-// {
-//   options[i].colorString = colorOptions[i]; // Assign the ColorString structs to the Option unions
-// }
-// selected = dropdown(options, 3, 0, 1);
-// printf("You selected: %s\n", options[selected].colorString.string);
-// ```
-//
-// ## Acknowledgements
-// This function was created by GPT-4 (Bing)
+/*
+# Dropdown
+A function that creates a dropdown menu with the given options and returns the selected option
+
+## Parameters
+- `options`: An array of Option unions containing the options to display
+- `num_options`: The number of options in the array
+- `selected`: The index of the option to select by default
+- `colorful`: A flag to indicate whether the options are colorful or not
+
+## Returns
+The index of the selected option
+
+## Example
+```c
+union Option options[] = {{"Option 1"}, {"Option 2"}, {"Option 3"}};
+int selected = dropdown(options, 3, 0, 0);
+printf("You selected: %s\n", options[selected].string);
+
+struct ColorString colorOptions[] = {{"Red", 31}, {"Green", 32}, {"Blue", 34}};
+for (int i = 0; i < 3; i++)
+{
+  options[i].colorString = colorOptions[i]; // Assign the ColorString structs to the Option unions
+}
+selected = dropdown(options, 3, 0, 1);
+printf("You selected: %s\n", options[selected].colorString.string);
+```
+
+## Acknowledgements
+This function was created by GPT-4 (Bing)
+*/
 int dropdown(
     union Option options[],
     int num_options,
