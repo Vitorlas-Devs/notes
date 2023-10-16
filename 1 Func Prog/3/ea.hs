@@ -14,22 +14,24 @@
 -- │  │     └─ Rational: numbers that are represented as ratios of two Integers
 -- │  └─ Real: numbers that support conversion to Rational
 -- └─ Enum: numbers that support conversion to and from Int
+--    └─ Bounded: numbers that have a lower and upper bound
+--       └─ Int, Integer, Word, Char, Bool
 
-inc :: Num a => a -> a
+inc :: (Num a) => a -> a
 inc x = x + 1
 
-fgh :: Num a => a -> Bool -> Int
+fgh :: (Num a) => a -> Bool -> Int
 fgh x c = 1
 
 -- eveN :: Int -> Bool
 -- eveN :: Integer -> Bool
-eveN :: Integral a => a -> Bool
+eveN :: (Integral a) => a -> Bool
 eveN n = n `mod` 2 == 0
 
-odD :: Integral a => a -> Bool
+odD :: (Integral a) => a -> Bool
 odD n = not (eveN n)
 
-square :: Num a => a -> a
+square :: (Num a) => a -> a
 square x = x * x
 
 squareinc :: Int -> Int
@@ -38,7 +40,7 @@ squareinc x = square (inc x)
 -- | fromIntegral
 
 -- This type signature is not valid, because the type of `x` is not constrained
-squareinc' :: Num a => a -> a
+squareinc' :: (Num a) => a -> a
 squareinc' x = square (inc x)
 
 -- Instead, we can use `fromIntegral` to convert the type of `x` to `Int`
@@ -91,7 +93,7 @@ squareinc'' x = square (inc (fromIntegral x))
 -- Factorial works by recursively multiplying a number by the factorial of the
 -- previous number, until it reaches 1.
 
-fact :: Integral a => a -> a
+fact :: (Integral a) => a -> a
 fact n = if n > 0 then product [1 .. n] else 1
 
 -- or with guards:
@@ -115,9 +117,9 @@ fact'' n
 -- product multiplies all the elements of a list together.
 
 -- It is defined in the Prelude as:
-product' :: Num a => [a] -> a
+product' :: (Num a) => [a] -> a
 product' [] = 1
-product' (x:xs) = x * product xs
+product' (x : xs) = x * product xs
 
 -- Prelude is the standard library of Haskell, and it is imported by default
 
@@ -143,7 +145,7 @@ product' (x:xs) = x * product xs
 -- Notice the pattern here: the function returns True for even numbers and
 -- False for odd numbers. We can use pattern matching to define the function like this:
 
-even' :: Integral a => a -> Bool
+even' :: (Integral a) => a -> Bool
 even' 0 = True
 even' 1 = False
 even' n = even' (n - 2)
