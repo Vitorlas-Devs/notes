@@ -8,6 +8,30 @@
 6. Eldöntés
 7. Kiválasztás
 
+## 2. Megszámlálás
+
+**Specifikáció:**
+
+```py
+Be: e∈Z, u∈Z 
+Ki: db∈N
+Ef: - 
+Uf: db=DARAB(i=e..u, T(i)) 
+```
+
+**Stuktogram:**
+
+```sql
+db := 0
+FOR: i = e..u
+  IF: T(i)
+    db := db + 1
+  ENDIF:
+ENDFOR:
+```
+
+![Megszámlálás](./megszamlalas.svg)
+
 ## 4. Feltételes maximumkeresés
 
 ### Feladatok
