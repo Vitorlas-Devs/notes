@@ -47,7 +47,7 @@ A kifejezéseknek van egy precedenciájuk is, ami meghatározza, hogy milyen sor
 | | `I` | Bitwise OR | Perform a bitwise OR operation | | `a I b` |
 | Logical | `&&` | Logical AND | True if both operands are true | Left-to-right | `a && b` |
 | | `II` | Logical OR | True if either operand is true | | `a II b` |
-| Tenary | `? :` | Conditional | If the first operand is true, evaluate the second operand, otherwise evaluate the third operand | Right-to-left | `a ? b : c` |
+| Ternary | `? :` | Conditional | If the first operand is true, evaluate the second operand, otherwise evaluate the third operand | Right-to-left | `a ? b : c` |
 | Assignment | `=` | Simple assignment | Assign the value of the right operand to the left operand | Right-to-left | `a = b` |
 | | `+=` | Add and assignment | Add the value of the right operand to the left operand and assign the result to the left operand | | `a += b` |
 | | `-=` | Subtract and assignment | Subtract the value of the right operand from the left operand and assign the result to the left operand | | `a -= b` |
