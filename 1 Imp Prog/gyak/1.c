@@ -88,6 +88,7 @@ bool evaluate()
   {
     for (int j = 0; j < MAX_COLS; ++j)
     {
+      printf("%d, %d <- %d\n", prevX[0], prevX[1], TABLE[i][j]);
       if (TABLE[i][j] == 0)
       {
         prevX[0] = 0;
