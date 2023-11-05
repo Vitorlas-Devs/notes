@@ -10,41 +10,25 @@ void init();
 void printTable();
 bool submit(int player, int col);
 bool evaluate();
-int game(char input[]);
+int game(char *input);
 
 int main()
 {
   init();
 
   // int winner = game("ABDCAGEEE");
-  // int winner = game("ABDCAEEEEEEFFFAC");
+  int winner = game("ABDCAEEEEEEFFFAC");
   // int winner = game("ABDCAEEEEEEFFG");
   // int winner = game("AAAAAAABBBBBBBCCCCCCCDDDDDDDEEEEEEEFFFFFFFGGGGGG");
 
-  // int winner = game("ABDCAEEEEEEF");
-
-  submit(1, 0);
-  submit(2, 1);
-  submit(1, 3);
-  submit(2, 2);
-  submit(1, 0);
-  submit(2, 4);
-  submit(1, 4);
-  submit(2, 4);
-  submit(1, 4);
-  submit(2, 4);
-  submit(1, 4);
-  submit(1, 5);
-
   printTable();
-  printf("%d\n", evaluate());
 
-  // if (winner == -1)
-  //   printf("Error!\n");
-  // else if (winner)
-  //   printf("Player %d won\n", winner);
-  // else
-  //   printf("Draw\n");
+  if (winner == -1)
+    printf("Error!\n");
+  else if (winner)
+    printf("Player %d won\n", winner);
+  else
+    printf("Draw\n");
 
   return 0;
 }
@@ -81,54 +65,29 @@ int game(char input[])
 
 bool evaluate()
 {
-  int prevX[2] = {0, 0};
-  int prevY[2] = {0, 0};
 
-  for (int i = 0; i < MAX_ROWS; ++i)
+  for (int i = 2; i < MAX_ROWS; ++i)
   {
     for (int j = 0; j < MAX_COLS; ++j)
     {
-      printf("%d, %d <- %d\n", prevX[0], prevX[1], TABLE[i][j]);
-      if (TABLE[i][j] == 0)
+      if (TABLE[i][j] != 0)
       {
-        prevX[0] = 0;
-        prevX[1] = 0;
-      }
-      else
-      {
-        if (prevX[0] != TABLE[i][j])
-          prevX[0] = TABLE[i][j];
-        else if (prevX[1] != TABLE[i][j])
-          prevX[1] = TABLE[i][j];
-        else if (prevX[0] == prevX[1] && prevX[1] == TABLE[i][j])
+        if (TABLE[i][j] == TABLE[i - 1][j] && TABLE[i][j] == TABLE[i - 2][j])
           return true;
       }
     }
-    prevX[0] = 0;
-    prevX[1] = 0;
   }
 
-  for (int j = 0; j < MAX_COLS; ++j)
+  for (int i = 0; i < MAX_ROWS; ++i)
   {
-    for (int i = 0; i < MAX_ROWS; ++i)
+    for (int j = 2; j < MAX_COLS; ++j)
     {
-      if (TABLE[i][j] == 0)
+      if (TABLE[i][j] != 0)
       {
-        prevX[0] = 0;
-        prevX[1] = 0;
-      }
-      else
-      {
-        if (prevY[0] != TABLE[i][j])
-          prevY[0] = TABLE[i][j];
-        else if (prevY[1] != TABLE[i][j])
-          prevY[1] = TABLE[i][j];
-        else if (prevY[0] == prevY[1] && prevY[1] == TABLE[i][j])
+        if (TABLE[i][j] == TABLE[i][j - 1] && TABLE[i][j] == TABLE[i][j - 2])
           return true;
       }
     }
-    prevY[0] = 0;
-    prevY[1] = 0;
   }
 
   return false;
