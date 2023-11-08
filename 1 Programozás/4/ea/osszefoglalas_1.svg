@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="82.4" viewBox="0 0 504 123.6" preserveAspectRatio="xMinYMin meet">
+<metadata>
+<structo:source xmlns:structo="https://nigjo.github.io/structogramview/">
+<![CDATA[FOR: i = 1..n
+  y[i] := |x[i]|
+ENDFOR:]]>
+</structo:source>
+</metadata>
+<style>
+svg{stroke:none;stroke-width:1px;fill:white;}
+line{stroke:black;}
+text{font-family:sans-serif;fill:black;}
+.comment&gt;text{font-style:italic;fill:gray;}
+.whiteShadow{fill:none !important;stroke:white;stroke-width:2px;}
+.casevalue,.blocktitle{fill:gray;font-size:75%;font-style:italic;}
+.caption{font-weight:bold;font-size:1.25em;}
+svg{font-size:24px}</style>
+<style class="darkreader darkreader--sync" media="screen"/>
+<g class="diagram" transform="translate(0,0)">
+<rect width="504" height="123.6"/>
+<g class="for" transform="translate(12,12)">
+<line x1="480" y1="0" x2="480" y2="99.6"/>
+<line x1="0" y1="0" x2="0" y2="99.6"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<line x1="0" y1="99.6" x2="480" y2="99.6"/>
+<text x="12" y="33" textLength="72">i = 1..n</text>
+<g class="block" transform="translate(37.2,49.2)">
+<g class="sequence" transform="translate(0,0)">
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="441.6" y2="0"/>
+<text x="6" y="33" textLength="108">y[i] := |x[i]|</text>
+</g>
+</g>
+</g>
+</g>
+</svg>

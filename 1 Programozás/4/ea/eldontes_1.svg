@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="148" viewBox="0 0 504 222" preserveAspectRatio="xMinYMin meet">
+<metadata>
+<structo:source xmlns:structo="https://nigjo.github.io/structogramview/">
+<![CDATA[i := 1
+FOR: i = 1..12 and név != hónapok_nevei[i]
+  i := i + 1
+ENDFOR:
+hónapnéve := i <= 12]]>
+</structo:source>
+</metadata>
+<style>
+svg{stroke:none;stroke-width:1px;fill:white;}
+line{stroke:black;}
+text{font-family:sans-serif;fill:black;}
+.comment&gt;text{font-style:italic;fill:gray;}
+.whiteShadow{fill:none !important;stroke:white;stroke-width:2px;}
+.casevalue,.blocktitle{fill:gray;font-size:75%;font-style:italic;}
+.caption{font-weight:bold;font-size:1.25em;}
+svg{font-size:24px}</style>
+<style class="darkreader darkreader--sync" media="screen"/>
+<g class="diagram" transform="translate(0,0)">
+<rect width="504" height="222"/>
+<g class="sequence" transform="translate(12,12)">
+<line x1="480" y1="0" x2="480" y2="49.2"/>
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<text x="6" y="33" textLength="52.5">i := 1</text>
+</g>
+<g class="for" transform="translate(12,61.2)">
+<line x1="480" y1="0" x2="480" y2="98.4"/>
+<line x1="0" y1="0" x2="0" y2="98.4"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<text x="12" y="33" textLength="393">i = 1..12 and név != hónapok_nevei[i]</text>
+<g class="block" transform="translate(37.2,49.2)">
+<g class="sequence" transform="translate(0,0)">
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="441.6" y2="0"/>
+<text x="6" y="33" textLength="85.5">i := i + 1</text>
+</g>
+</g>
+</g>
+<g class="sequence" transform="translate(12,159.6)">
+<line x1="480" y1="0" x2="480" y2="50.4"/>
+<line x1="0" y1="0" x2="0" y2="50.4"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<line x1="0" y1="50.4" x2="480" y2="50.4"/>
+<text x="6" y="33" textLength="226.5">hónapnéve := i &lt;= 12</text>
+</g>
+</g>
+</svg>

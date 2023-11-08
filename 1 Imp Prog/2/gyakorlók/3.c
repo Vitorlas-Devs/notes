@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int reverse(int sum);
+
 int main()
 {
   int num;

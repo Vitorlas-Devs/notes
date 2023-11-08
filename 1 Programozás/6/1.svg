@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="218.4" viewBox="0 0 504 327.6" preserveAspectRatio="xMinYMin meet">
+<metadata>
+<structo:source xmlns:structo="https://nigjo.github.io/structogramview/">
+<![CDATA[max := a1
+i := 2
+LOOP:
+    IF: max < ai
+        max := ai
+    ENDIF:
+    i := i + 1
+ENDLOOP: i <= n]]>
+</structo:source>
+</metadata>
+<style>
+svg{stroke:none;stroke-width:1px;fill:white;}
+line{stroke:black;}
+text{font-family:sans-serif;fill:black;}
+.comment&gt;text{font-style:italic;fill:gray;}
+.whiteShadow{fill:none !important;stroke:white;stroke-width:2px;}
+.casevalue,.blocktitle{fill:gray;font-size:75%;font-style:italic;}
+.caption{font-weight:bold;font-size:1.25em;}
+svg{font-size:24px}</style>
+<style class="darkreader darkreader--sync" media="screen"/>
+<g class="diagram" transform="translate(0,0)">
+<rect width="504" height="327.6"/>
+<g class="sequence" transform="translate(12,12)">
+<line x1="480" y1="0" x2="480" y2="49.2"/>
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<text x="6" y="33" textLength="106.5">max := a1</text>
+</g>
+<g class="sequence" transform="translate(12,61.2)">
+<line x1="480" y1="0" x2="480" y2="49.2"/>
+<line x1="0" y1="0" x2="0" y2="49.2"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<text x="6" y="33" textLength="52.5">i := 2</text>
+</g>
+<g class="while" transform="translate(12,110.4)">
+<line x1="480" y1="0" x2="480" y2="205.2"/>
+<line x1="0" y1="0" x2="0" y2="205.2"/>
+<line x1="0" y1="0" x2="480" y2="0"/>
+<line x1="0" y1="205.2" x2="480" y2="205.2"/>
+<text x="12" y="189" textLength="60">i &lt;= n</text>
+<g class="block" transform="translate(37.2,1.2)">
+<g class="if" transform="translate(0,0)">
+<line x1="0" y1="0" x2="0" y2="104.4"/>
+<line x1="0" y1="0" x2="265.97" y2="54"/>
+<line x1="265.97" y1="54" x2="441.6" y2="0"/>
+<text x="174.75" y="27" textLength="91.5" class="whiteShadow">max &lt; ai</text>
+<text x="174.75" y="27" textLength="91.5">max &lt; ai</text>
+<g class="then" transform="translate(1.2,54)">
+<text x="4.5" y="-6" textLength="31.5" class="blocktitle">true</text>
+<g class="sequence" transform="translate(0,0)">
+<line x1="-1.5" y1="0" x2="265.97" y2="0"/>
+<line x1="0" y1="50.4" x2="264.47" y2="50.4"/>
+<text x="6" y="33" textLength="97.5">max := ai</text>
+</g>
+</g>
+<g class="else" transform="translate(265.67,54)">
+<line x1="0" y1="0" x2="0" y2="50.4"/>
+<text x="132.19" y="-6" textLength="37.5" class="blocktitle">false</text>
+<g class="sequence" transform="translate(1.2,0)">
+<line x1="-1.5" y1="0" x2="176.21" y2="0"/>
+<line x1="0" y1="50.4" x2="174.71" y2="50.4"/>
+</g>
+</g>
+</g>
+<g class="sequence" transform="translate(0,104.4)">
+<line x1="0" y1="0" x2="0" y2="50.4"/>
+<line x1="0" y1="0" x2="441.6" y2="0"/>
+<line x1="0" y1="50.4" x2="441.6" y2="50.4"/>
+<text x="6" y="33" textLength="85.5">i := i + 1</text>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -3,5 +3,5 @@
     "utils.h": "c",
     "fcntl.h": "c",
     "stdio.h": "c"
-  },
+  }
 }
