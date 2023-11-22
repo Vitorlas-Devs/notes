@@ -5,6 +5,7 @@
     "stdio.h": "c",
     "string.h": "c",
     "stdbool.h": "c",
-    "corecrt.h": "c"
+    "corecrt.h": "c",
+    "tasks.h": "c"
   }
 }

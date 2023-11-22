@@ -1,0 +1,20 @@
+#ifndef _INC_TASKS
+#define _INC_TASKS
+
+void feladat1(void);
+void wc(const char s[]);
+
+void feladat2(void);
+int compare(const char s1[], const char s2[]);
+
+void feladat3(void);
+void copy(const char from[], char to[]);
+
+void feladat4(void);
+
+void feladat5(void);
+void to_upper(char s[]);
+
+void feladat6(void);
+
+#endif
