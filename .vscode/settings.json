@@ -7,5 +7,6 @@
     "stdbool.h": "c",
     "corecrt.h": "c",
     "tasks.h": "c"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
