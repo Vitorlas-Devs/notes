@@ -2,6 +2,11 @@
   "files.associations": {
     "utils.h": "c",
     "fcntl.h": "c",
-    "stdio.h": "c"
-  }
+    "stdio.h": "c",
+    "string.h": "c",
+    "stdbool.h": "c",
+    "corecrt.h": "c",
+    "tasks.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
