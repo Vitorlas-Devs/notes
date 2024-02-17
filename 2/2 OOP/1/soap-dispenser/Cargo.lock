@@ -3,5 +3,23 @@
 version = 3
 
 [[package]]
+name = "capnp"
+version = "0.19.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5f57dd1f96ae33d2f735964d3cb5b9c5fec1a4c081a0aab44cc857015fbc1c72"
+dependencies = [
+ "embedded-io",
+]
+
+[[package]]
+name = "embedded-io"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "edd0f118536f44f5ccd48bcb8b111bdc3de888b58c74639dfb034a357d0f206d"
+
+[[package]]
 name = "soap-dispenser"
 version = "0.1.0"
+dependencies = [
+ "capnp",
+]
