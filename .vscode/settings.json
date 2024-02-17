@@ -8,5 +8,7 @@
     "corecrt.h": "c",
     "tasks.h": "c"
   },
-  "C_Cpp.errorSquiggles": "disabled"
+  "rust-analyzer.linkedProjects": [
+    "${workspaceFolder}\\2\\2 OOP\\1\\soap-dispenser\\Cargo.toml"
+  ],
 }
