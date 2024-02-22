@@ -11,5 +11,5 @@
   "rust-analyzer.linkedProjects": [
     "${workspaceFolder}\\2\\2 OOP\\1\\soap-dispenser\\Cargo.toml"
   ],
-  "mojo.modularHomePath": "",
+  "mojo.modularHomePath": "/home/codespace/.modular",
 }
