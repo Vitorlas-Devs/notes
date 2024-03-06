@@ -1,4 +1,4 @@
-package plane.point2d;
+package point2d;
 
 public class Point {
   public double x;

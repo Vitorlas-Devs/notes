@@ -1,5 +1,3 @@
-import plane.PublicCircle;
-
 public class CircleMain {
   public static void main(String[] args) {
     PublicCircle pc = new PublicCircle();

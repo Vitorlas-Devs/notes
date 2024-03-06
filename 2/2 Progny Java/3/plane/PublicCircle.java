@@ -1,4 +1,3 @@
-package plane;
 import point2d.Point;
 
 public class PublicCircle {
