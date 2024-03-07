@@ -17,11 +17,11 @@ struct Element(CollectionElement):
 struct Bag:
     var seq: DynamicVector[Element]
 
-    fn max() -> Int:
+    fn max(self) -> Int:
         var max = 0
-        for e in 
-            if e.count > max: # ITER
-                max = e.count
+        for e in self.seq:
+            if e[].count > max:
+                max = e[].count
         return max
 
     fn log_search(self, e: String) -> Int:
