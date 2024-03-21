@@ -3,11 +3,11 @@
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
-import array.util.ArrayUtil;
+import array.util.ArrayUtilTest;
 
 @Suite
 @SelectClasses({
-	ArrayUtil.class,
+	ArrayUtilStructureTest.class,
 	ArrayUtilTest.class
 })
 public class ArrayUtilTestSuite {}
