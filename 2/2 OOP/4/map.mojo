@@ -6,7 +6,7 @@ struct Item(CollectionElement):
 
 @value
 struct Map:
-    var seq: DynamicVector[Item]
+    var seq: List[Item]
 
     fn clear(inout self):
         self.seq.clear()

@@ -38,11 +38,11 @@ struct Circle(Stringable):
 
 
 fn main() raises:
-    let p = Point(1, 2)
+    var p = Point(1, 2)
     print(p)
 
-    let c = Circle(p, 3)
+    var c = Circle(p, 3)
     print(c)
 
-    let p2 = Point(1, 3)
+    var p2 = Point(1, 3)
     print(c.contains(p2))

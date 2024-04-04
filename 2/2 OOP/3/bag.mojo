@@ -1,3 +1,5 @@
+from math import math
+
 @value
 struct Element(CollectionElement):
     var data: String
@@ -15,7 +17,7 @@ struct Element(CollectionElement):
 
 @value
 struct Bag:
-    var seq: DynamicVector[Element]
+    var seq: List[Element]
 
     fn max(self) -> Int:
         var max = 0

@@ -1,3 +1,5 @@
+from math import math
+
 struct SoapDispenser(Stringable):
     var current: UInt16
     var capacity: UInt16

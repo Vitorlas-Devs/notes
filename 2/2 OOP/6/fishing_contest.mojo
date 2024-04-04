@@ -12,12 +12,12 @@ struct Catch(CollectionElement, Stringable):
 @value
 struct Fisherman(Stringable):
     var name: String
-    var loot: DynamicVector[Catch]
+    var loot: List[Catch]
     var sum: Int
 
     fn __init__(inout self, name: String, *loot: Catch):
         self.name = name
-        self.loot = DynamicVector[Catch]()
+        self.loot = List[Catch]()
         self.sum = 0
 
         for c in loot:
