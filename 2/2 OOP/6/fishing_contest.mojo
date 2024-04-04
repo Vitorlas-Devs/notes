@@ -28,7 +28,7 @@ struct Fisherman(Stringable):
 
         if c.species == "carp" and c.length >= 0.5:
             self.sum += c.weight
-        
+
         if self.sum > 10:
             print(self.name + " has caught more than 10 kg of carp")
 
@@ -37,7 +37,6 @@ struct Fisherman(Stringable):
         for c in self.loot:
             res += str(c[]) + "\n"
         return res
-
 
 
 fn main():
