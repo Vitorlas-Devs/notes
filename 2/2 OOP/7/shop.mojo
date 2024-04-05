@@ -24,17 +24,26 @@ struct Customer:
         for product in dep.stock:
             if product[].name == name:
                 return product[]
+
         return p
 
     fn buy(inout self, index: Int, inout dep: Department) -> Department:
         self.cart.append(dep.stock[index])
-        remove(dep.stock, index)
+        self.cart = remove(dep.stock, index)
 
         return dep
 
 
-fn remove[T: CollectionElement](owned list: List[T], index: Int) -> List[T]:
-    return list[:index] + list[index + 1 :]
+fn remove[T: CollectionElement](owned li: List[T], index: Int) -> List[T]:
+    var out = List[T]()
+
+    for i in range(li.size):
+        if i == index:
+            i -= 1
+            continue
+        out[i] = li[i]
+
+    return out
 
 
 fn main():
