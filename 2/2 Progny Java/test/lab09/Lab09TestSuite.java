@@ -2,6 +2,8 @@
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
+import data.structure.MultiSetSuite;
+
 @Suite
 @SelectClasses({
 	OrganiserSuite.class
