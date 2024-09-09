@@ -4,3 +4,4 @@
 *.pdb
 **/target/
 *.class
+.metadata

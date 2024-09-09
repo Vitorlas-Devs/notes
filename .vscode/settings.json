@@ -13,4 +13,5 @@
     "${workspaceFolder}/2/2 Progny Java/3/plane/Cargo.toml",
   ],
   "mojo.modularHomePath": "/home/rettend/.modular",
+  "java.compile.nullAnalysis.mode": "automatic",
 }
