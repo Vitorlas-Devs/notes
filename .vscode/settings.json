@@ -14,4 +14,6 @@
   ],
   "mojo.modularHomePath": "/home/rettend/.modular",
   "java.compile.nullAnalysis.mode": "automatic",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
 }
