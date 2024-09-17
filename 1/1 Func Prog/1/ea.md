@@ -25,7 +25,7 @@ Ez 3 időegységbe telik. Ez a strict evaluation.
 Funkcionális nyelvekben a kiértékelés így történik:
 
 ```haskell
-test a = 
+test a =
     let a = f x
         b = g x
         c = h x

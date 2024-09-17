@@ -13,10 +13,10 @@
 **Specifikáció:**
 
 ```py
-Be: e∈Z, u∈Z 
+Be: e∈Z, u∈Z
 Ki: db∈N
-Ef: - 
-Uf: db=DARAB(i=e..u, T(i)) 
+Ef: -
+Uf: db=DARAB(i=e..u, T(i))
 ```
 
 **Stuktogram:**
@@ -201,7 +201,7 @@ Uf: van = ∃i ∈ [e..u]: f(i) and
             ∀i ∈ [e..u]: f(i) -> not f(ind))
 
 # Rövidítve
-Uf: (van, ind) = keres(i ∈ [e..u]: f(i)) 
+Uf: (van, ind) = keres(i ∈ [e..u]: f(i))
 ```
 
 **Stuktogram**
@@ -409,7 +409,6 @@ Be: e ∈ Z, u ∈ Z
 Ki: y ∈ Z[1..u-e+1]
 Ef: -
 Uf: ∀i ∈ [e..u]: y[i-e+1] = f(i)
-
 
 # Rövidítve
 Uf: y = másol(i ∈ [e..u]: f(i))

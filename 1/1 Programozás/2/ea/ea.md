@@ -4,7 +4,7 @@
 - Algoritmus
 - Kód
 
-## Szekvencia  
+## Szekvencia
 
 - Lépések sorozata.
 
@@ -29,7 +29,7 @@ Be: x ∈ C, y ∈ C
 Ki: v ∈ S
 Ef: (x = '+' or x = '-') and (y = '+' vagy y = '-')
 Uf: ((x = '+' or y = '+') -> v = 'Rh-pozitív') or
-    ((x = '-' and y = '-') -> v = 'Rh-negatív') 
+    ((x = '-' and y = '-') -> v = 'Rh-negatív')
 ```
 
 > **Note**

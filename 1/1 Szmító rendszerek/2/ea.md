@@ -130,4 +130,3 @@ Szoftver különbségek:
 - Shell típusok:
   - Windows: cmd.exe, PowerShell
   - Linux: sh, bash
-

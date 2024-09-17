@@ -19,7 +19,7 @@ int main(void);
 
 // Függvénydefiníciók
 int main(void) {
-    printf("Hello, world!\n");  
+    printf("Hello, world!\n");
     return 0;
 }
 ```
