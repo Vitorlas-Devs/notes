@@ -1,7 +1,12 @@
 {
   "name": "first",
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276",
   "module": "index.ts",
+  "workspaces": [
+    "3/3 Webprog/*"
+  ],
   "scripts": {
     "lint": "eslint . --fix"
   },
@@ -9,11 +14,11 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^3.5.0",
-    "consola": "^3.2.3",
-    "eslint": "^9.10.0"
+    "consola": "^3.2.3"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@antfu/eslint-config": "^3.5.0",
+    "@types/bun": "latest",
+    "eslint": "^9.10.0"
   }
 }

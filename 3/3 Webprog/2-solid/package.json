@@ -1,0 +1,21 @@
+{
+  "name": "example-notes",
+  "type": "module",
+  "packageManager": "bun@1.1.28",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "bun --bun vinxi dev",
+    "build": "bun --bun vinxi build"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.14.1",
+    "@solidjs/start": "^1.0.6",
+    "date-fns": "^3.6.0",
+    "marked": "^12.0.1",
+    "solid-js": "^1.8.18",
+    "unstorage": "1.10.2",
+    "vinxi": "^0.4.1"
+  }
+}
