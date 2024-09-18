@@ -8,6 +8,7 @@
     "corecrt.h": "c",
     "tasks.h": "c"
   },
+  "C_Cpp.codeAnalysis.runAutomatically": true,
   "rust-analyzer.linkedProjects": [
     "${workspaceFolder}/2/2 OOP/1/soap-dispenser/Cargo.toml",
     "${workspaceFolder}/2/2 Progny Java/3/plane/Cargo.toml"
