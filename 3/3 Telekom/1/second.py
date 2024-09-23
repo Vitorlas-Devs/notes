@@ -12,22 +12,24 @@ def main():
         5: 0.85,
     }
 
-    for i in jegyHatarok.keys():
-        haziPercent = int(
-            round(data["haziPont"]["elert"] / data["haziPont"]["max"], 2) * 100
-        )
-        zhPercent = int(round(data["zhPont"]["elert"] / data["zhPont"]["max"], 2) * 100)
-        mininetPont = (
-            (jegyHatarok[i] - zhPercent * 0.33 - haziPercent * 0.33) / 0.33
-        ) * data["mininetPont"]["max"]
+    haziPercent = data["haziPont"]["elert"] / data["haziPont"]["max"]
+    zhPercent = data["zhPont"]["elert"] / data["zhPont"]["max"]
 
-        kell = mininetPont
-        if mininetPont < data["mininetPont"]["max"]:
-            kell = data["mininetPont"]["max"] * data["mininetPont"]["min"]
-        elif mininetPont > data["mininetPont"]["max"]:
-            kell = "Remenytelen"
+    for grade, neededPercent in jegyHatarok.items():
+        achievedPercent = (haziPercent * 0.33) + (zhPercent * 0.33)
 
-        print(f"{i} kell {kell}")
+        neededMininetPercent = (neededPercent - achievedPercent) / 0.33
+        neededMininetPont = neededMininetPercent * data["mininetPont"]["max"]
+
+        if neededMininetPont < data["mininetPont"]["max"] * data["mininetPont"]["min"]:
+            neededMininetPont = round(data["mininetPont"]["max"] * data["mininetPont"]["min"])
+        elif neededMininetPont > data["mininetPont"]["max"]:
+            neededMininetPont = "Remenytelen"
+
+        if not isinstance(neededMininetPont, str):
+            neededMininetPont = round(neededMininetPont)
+
+        print(f"{grade}: {neededMininetPont}")
 
 
 if __name__ == "__main__":

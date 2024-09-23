@@ -15,29 +15,20 @@ Ex.:
 …"""
 
 end_points = []
-switches = []
-links = []
-possible_circuits = []
-simulation = []
 demands = []
 
 
 def main():
     with open("cs1.json", "r") as f:
         data = json.load(f)
+
         end_points = data["end-points"]
-        switches = data["switches"]
-        links = data["links"]
-        possible_circuits = data["possible-circuits"]
-        simulation = data["simulation"]
         demands = data["simulation"]["demands"]
 
     for i in range(len(end_points)):
         print(
             f"{i + 1}. demand allocation: {demands[i]['end-points'][0]}<->{demands[i]['end-points'][1]} st:{demands[i]['start-time']} - successful"
         )
-        for j in range(len(possible_circuits)):
-            pass
 
 
 if __name__ == "__main__":
