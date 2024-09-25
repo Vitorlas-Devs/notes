@@ -15,10 +15,11 @@ int main() {
   std::println("p.x: {}", p.x); // works
   // This is because int is a trivial type and they are copied by value
 
-  Point* p1 = new Point{10, 20};
+  Point *p1 = new Point{10, 20};
   std::println("p1->x: {}", p1->x);
 
-  Point* p2 = std::move(p1);
+  Point *p2 = std::move(p1);
   std::println("p2->x: {}", p2->x);
-  // std::println("p1->x: {}", p1->x); // undefined behavior, no compile time error tho
+  // std::println("p1->x: {}", p1->x); // undefined behavior
+  // no compile time error tho
 }
