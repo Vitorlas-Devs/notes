@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Debug active file",
       "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
-      "args": [],
+      "args": ["-std=c++2b"],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "build active file"
     }
