@@ -1,6 +1,6 @@
 from socket import socket, AF_INET, SOCK_STREAM
-from select import select
 from struct import Struct
+import select
 
 
 server_addr = ("", 4321)
@@ -16,7 +16,7 @@ def main():
 
         while True:
             timeout = 1
-            readable, writable, errored = select(inputs, [], [], timeout)
+            readable, writable, errored = select.select(inputs, [], [], timeout)
 
             if not (readable or writable or errored):
                 continue
