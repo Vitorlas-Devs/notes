@@ -13,7 +13,7 @@ def main():
         recNum = int(sys.argv[1])
         recType = sys.argv[2]
     else:
-        print("Usage: python first.py <record number> <record type>")
+        print(f"Usage: python {sys.argv[0]} <record number> <record type>")
         return
 
     with open("domainPort.bin", "rb") as f:
