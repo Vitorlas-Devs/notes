@@ -1,7 +1,6 @@
 from socket import socket, AF_INET, SOCK_STREAM
 from time import sleep
 
-
 server_addr = ("localhost", 4321)
 
 
