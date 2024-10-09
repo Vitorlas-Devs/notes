@@ -8,7 +8,8 @@
       "program": "${workspaceFolder}/a.exe",
       "args": ["-std=c++2b"],
       "cwd": "${workspaceFolder}",
-      "preLaunchTask": "build active file"
+      "console": "integratedTerminal",
+      "preLaunchTask": "clear terminal and build"
     }
   ]
 }

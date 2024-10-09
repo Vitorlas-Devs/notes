@@ -2,6 +2,12 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "clear terminal",
+      "type": "shell",
+      "command": "cls",
+      "problemMatcher": []
+    },
+    {
       "label": "build active file",
       "type": "shell",
       "command": "clang++",
@@ -16,6 +22,11 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "clear terminal and build",
+      "dependsOn": ["clear terminal", "build active file"],
+      "problemMatcher": []
     }
   ]
 }
