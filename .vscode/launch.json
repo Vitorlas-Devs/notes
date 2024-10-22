@@ -6,7 +6,6 @@
       "request": "launch",
       "name": "Debug active file",
       "program": "${workspaceFolder}/a.exe",
-      "args": ["-std=c++2b"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "preLaunchTask": "clear terminal and build"
