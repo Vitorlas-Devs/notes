@@ -107,5 +107,6 @@
     "scss",
     "pcss",
     "postcss"
-  ]
+  ],
+  "cmake.sourceDirectory": "C:/Users/hegyi/Documents/GitHub/notes/3/3 Cpp/ati_1"
 }

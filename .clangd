@@ -1,2 +1,9 @@
 CompileFlags:
-  Add: [-std=c++2b]
+  Add: 
+    - -std=c++2b
+    - -fmodules
+    - -fbuiltin-module-map
+    # - --precompile
+  Remove: 
+    - -fno-modules
+    - -fno-module-maps
