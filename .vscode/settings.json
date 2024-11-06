@@ -8,6 +8,14 @@
     "corecrt.h": "c",
     "tasks.h": "c"
   },
+  "cmake.configureOnOpen": true,
+  "cmake.configureArgs": [
+    "-DCMAKE_CXX_COMPILER=clang++"
+  ],
+  "clangd.arguments": [
+    "--header-insertion=never",
+    "--compile-commands-dir=${workspaceFolder}/build"
+  ],
   "C_Cpp.codeAnalysis.runAutomatically": true,
   "rust-analyzer.linkedProjects": [
     "${workspaceFolder}/2/2 OOP/1/soap-dispenser/Cargo.toml",
