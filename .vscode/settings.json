@@ -12,6 +12,7 @@
   "cmake.configureArgs": [
     "-DCMAKE_CXX_COMPILER=clang++"
   ],
+  "clangd.path": "C:/Users/hegyi/Documents/clangd_19.1.2/bin/clangd.exe",
   "clangd.arguments": [
     "--header-insertion=never",
     "--compile-commands-dir=${workspaceFolder}/build"
