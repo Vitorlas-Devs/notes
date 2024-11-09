@@ -8,7 +8,7 @@
       "problemMatcher": []
     },
     {
-      "label": "build active file",
+      "label": "build active file (C++)",
       "type": "shell",
       "command": "clang++",
       "args": [
@@ -22,11 +22,6 @@
         "kind": "build",
         "isDefault": true
       }
-    },
-    {
-      "label": "clear terminal and build",
-      "dependsOn": ["clear terminal", "build active file"],
-      "problemMatcher": []
     }
   ]
 }

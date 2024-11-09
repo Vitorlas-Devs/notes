@@ -6,6 +6,8 @@ package qwerty;
  * and open the template in the editor.
  */
 
+import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.UIManager;
 
 /**
  *
@@ -13,11 +15,17 @@ package qwerty;
  */
 public class Qwerty {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        QwertyGUI gui = new QwertyGUI();
+  /**
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    try {
+      UIManager.setLookAndFeel(new FlatLightLaf());
+    } catch (Exception e) {
+      System.err.println("Failed to initialize FlatLaf");
     }
-    
+
+    QwertyGUI gui = new QwertyGUI();
+  }
+
 }

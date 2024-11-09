@@ -9,9 +9,9 @@ package calc;
  * @author bli
  */
 public enum Operation {
-    ADD,
-    SUB,
-    MUL,
-    DIV,
-    POW
+  ADD,
+  SUB,
+  MUL,
+  DIV,
+  POW
 }

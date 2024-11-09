@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package calc;
+package flashcards_mvc;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.UIManager;
 
 /**
  *
- * @author bli
+ * @author pinter
  */
-public class Calc {
+public class Flashcards {
 
   /**
    * @param args the command line arguments
@@ -24,7 +24,7 @@ public class Calc {
       System.err.println("Failed to initialize FlatLaf");
     }
 
-    CalcGUI gui = new CalcGUI(30);
+    FlashcardsGUI gui = new FlashcardsGUI();
   }
 
 }

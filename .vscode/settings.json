@@ -25,10 +25,13 @@
   "mojo.modularHomePath": "/home/rettend/.modular",
   "java.compile.nullAnalysis.mode": "automatic",
   "java.project.sourcePaths": [
-    "3/3 Progtech/1",
-    "3/3 Progtech/2",
-    "3/3 Progtech/3",
-    "3/3 Progtech/4"
+    "3\\3 Progtech\\1",
+    "3\\3 Progtech\\2",
+    "3\\3 Progtech\\3",
+    "3\\3 Progtech\\4",
+    "3\\3 Progtech\\6",
+    "3\\3 Progtech\\7",
+    "3\\3 Progtech\\8"
   ],
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
@@ -117,5 +120,8 @@
     "pcss",
     "postcss"
   ],
-  "cmake.sourceDirectory": "C:/Users/hegyi/Documents/GitHub/notes/3/3 Cpp/ati_1"
+  "cmake.sourceDirectory": "C:/Users/hegyi/Documents/GitHub/notes/3/3 Cpp/ati_1",
+  "java.project.referencedLibraries": [
+    "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\flatlaf-3.5.2.jar"
+  ]
 }

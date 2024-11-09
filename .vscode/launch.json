@@ -1,6 +1,11 @@
 {
   "version": "0.2.0",
   "configurations": [
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
     {
       "type": "lldb",
       "request": "launch",
@@ -8,7 +13,7 @@
       "program": "${workspaceFolder}/a.exe",
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
-      "preLaunchTask": "clear terminal and build"
+      "preLaunchTask": "clear terminal and build (C++)"
     }
   ]
 }
