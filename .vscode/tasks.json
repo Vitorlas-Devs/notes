@@ -22,6 +22,17 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "clear terminal and build (C++)",
+      "dependsOn": [
+        "clear terminal",
+        "build active file (C++)"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }

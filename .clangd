@@ -1,9 +1,9 @@
 CompileFlags:
   Add: 
     - -std=c++2b
-    - -fmodules
-    - -fbuiltin-module-map
-    - --experimental-modules-support
+    # - -fmodules
+    # - -fbuiltin-module-map
+    # - --experimental-modules-support
     # - --precompile
   Remove: 
     - -fno-modules
