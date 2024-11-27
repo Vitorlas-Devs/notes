@@ -80,8 +80,8 @@ public:
       delete[] data;
       data = new_data;
       size++;
-      pos.index++;
-      pos.ptr = data;
+      // pos.index++;
+      // pos.ptr = data;
       return iterator(data, i);
     } else {
       for (iterator it = end(); it != pos; it--) {
@@ -89,7 +89,7 @@ public:
       }
       *pos = value;
       size++;
-      pos.index++;
+      // pos.index++;
       return pos;
     }
   }
@@ -123,6 +123,15 @@ public:
       iterator old = *this;
       index--;
       return old;
+    }
+
+    iterator &operator+=(size_t n) {
+      index += n;
+      return *this;
+    }
+    iterator &operator-=(size_t n) {
+      index -= n;
+      return *this;
     }
 
     bool operator==(const iterator &other) const {

@@ -27,15 +27,21 @@ int main() {
   V<int> v2(2);
   v2.push_back(2);
 
-  cout << "v1.begin() == v2.begin(): " << (v1.begin() == v2.begin() ? "true" : "false") << endl;
+  cout << "v1.begin() == v2.begin(): "
+       << (v1.begin() == v2.begin() ? "true" : "false") << endl;
 
   PRINT_VECTOR(v1);
   PRINT_VECTOR(v2);
 
   V<int>::iterator it = v1.begin();
-  v1.insert(it, 9);
-  it++;
-  v1.insert(it, 9);
+  V<int>::value_type new_value1 = *(v1.insert(it, 9));
+
+  cout << "new_value: " << new_value1 << endl;
+
+  it += 2;
+  V<int>::value_type new_value2 = *(v1.insert(it, 9));
 
   PRINT_VECTOR(v1);
+
+  cout << "new_value: " << new_value2 << endl;
 }
