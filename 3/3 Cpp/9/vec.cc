@@ -4,10 +4,10 @@
 using namespace std;
 
 // #vec is a string representation of vec
-#define PRINT_VECTOR(vec) print_v(vec, #vec)
+#define PRINT_VECTOR(vec, ...) print_v(vec, #vec, __VA_ARGS__)
 
-void print_v(V<int> &v, const string &name) {
-  cout << name << " vector contents:" << endl;
+void print_v(V<int> &v, const string &name, const string &message = "") {
+  cout << "[" << name << (message == "" ? "]" : "] ") << message << ":" << endl;
   for (V<int>::iterator it = v.begin(); it != v.end(); it++) {
     cout << *it << " ";
   }
@@ -41,7 +41,16 @@ int main() {
   it += 2;
   V<int>::value_type new_value2 = *(v1.insert(it, 9));
 
-  PRINT_VECTOR(v1);
+  PRINT_VECTOR(v1, "insert 9");
 
   cout << "new_value: " << new_value2 << endl;
+
+  it = v1.begin() + 2;
+  v1.erase(it);
+
+  PRINT_VECTOR(v1, "remove 3rd value");
+
+  v1.clear();
+
+  PRINT_VECTOR(v1, "clear");
 }

@@ -67,31 +67,54 @@ public:
 
   iterator insert(iterator &pos, const T &value) {
     if (size == capacity) {
+      size_t position = pos.index;
       capacity *= 2;
       T *new_data = new T[capacity];
-      size_t i = 0;
-      for (iterator it = begin(); it != pos; it++) {
-        new_data[i++] = *it;
+
+      for (size_t i = 0; i < position; i++) {
+        new_data[i] = data[i];
       }
-      new_data[i++] = value;
-      for (iterator it = pos; it != end(); it++) {
-        new_data[i++] = *it;
+
+      new_data[position] = value;
+
+      for (size_t i = position; i < size; i++) {
+        new_data[i + 1] = data[i];
       }
+
       delete[] data;
       data = new_data;
       size++;
-      // pos.index++;
-      // pos.ptr = data;
-      return iterator(data, i);
+      return iterator(data, position);
     } else {
-      for (iterator it = end(); it != pos; it--) {
-        *it = *(it - 1);
+      size_t position = pos.index;
+
+      for (size_t i = size; i > position; i--) {
+        data[i] = data[i - 1];
       }
-      *pos = value;
+
+      data[position] = value;
       size++;
-      // pos.index++;
-      return pos;
+      return iterator(data, position);
     }
+  }
+
+  iterator erase(const iterator &pos) {
+    if (pos.index >= size) {
+      return end();
+    }
+
+    for (size_t i = pos.index; i < size - 1; ++i) {
+      data[i] = data[i + 1];
+    }
+
+    size--;
+    return pos;
+  }
+
+  void clear() {
+    delete[] data;
+    data = new T[capacity];
+    size = 0;
   }
 
   class iterator {
@@ -116,12 +139,12 @@ public:
     }
 
     iterator &operator--() {
-      index--;
+      --index;
       return *this;
     }
     iterator operator--(int) {
       iterator old = *this;
-      index--;
+      index++;
       return old;
     }
 

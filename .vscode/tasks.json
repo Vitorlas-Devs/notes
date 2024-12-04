@@ -12,6 +12,7 @@
       "type": "shell",
       "command": "clang++",
       "args": [
+        "-DDEBUG",
         "-std=c++2b",
         "-g",
         "${file}",
