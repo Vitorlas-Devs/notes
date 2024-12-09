@@ -8,6 +8,13 @@
     //   "mainClass": "${file}"
     // },
     {
+      "type": "java",
+      "name": "Launch Arkanoid",
+      "request": "launch",
+      "mainClass": "Arkanoid.Arkanoid",
+      "cwd": "${workspaceFolder}/3/3 Progtech/12/Arkanoid"
+    },
+    {
       "type": "lldb",
       "request": "launch",
       "name": "Debug active file",

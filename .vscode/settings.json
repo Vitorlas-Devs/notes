@@ -33,7 +33,8 @@
     "3\\3 Progtech\\6",
     "3\\3 Progtech\\7",
     "3\\3 Progtech\\8",
-    "3\\3 Progtech\\db"
+    "3\\3 Progtech\\db",
+    "3\\3 Progtech\\12"
   ],
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
@@ -124,10 +125,10 @@
   ],
   "cmake.sourceDirectory": "C:/Users/hegyi/Documents/GitHub/notes/3/3 Cpp/ati_1",
   "java.project.referencedLibraries": [
-    "3\\3 Progtech\\DbViewer.jar",
     "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\db-derby-10.16.1.1-bin\\lib\\derbyclient.jar",
     "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\db-derby-10.16.1.1-bin\\lib\\derby.jar",
     "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\flatlaf-3.5.2.jar",
-    "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\db-derby-10.16.1.1-bin\\lib\\derbytools.jar"
+    "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\db-derby-10.16.1.1-bin\\lib\\derbytools.jar",
+    "c:\\Users\\hegyi\\Documents\\GitHub\\notes\\3\\3 Progtech\\DbViewer.jar"
   ]
 }
