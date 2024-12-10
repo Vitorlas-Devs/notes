@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "classes/auth.php";
 $auth = new Auth();
 function is_empty($input, $key)
@@ -61,5 +62,6 @@ if (count($_POST) != 0) {
     </form>
     <a href="login.php">Bejelentkezés</a>
 </body>
+
 
 </html>
