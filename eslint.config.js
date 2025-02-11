@@ -4,5 +4,6 @@ export default antfu({
   rules: {
     'no-console': 'off',
   },
+  ignores: ['**/vendor/**'],
   solid: true,
 })

@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint . --fix",
+    "studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.39.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.4",
+    "better-sqlite3": "^11.8.1",
+    "concurrently": "^9.0.1",
+    "drizzle-kit": "^0.30.4",
+    "laravel-vite-plugin": "^1.2.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^6.0.11"
+  }
+}
