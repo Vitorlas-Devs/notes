@@ -7,27 +7,43 @@
       "command": "cls",
       "problemMatcher": []
     },
+    // {
+    //   "label": "build active file (C++)",
+    //   "type": "shell",
+    //   "command": "clang++",
+    //   "args": [
+    //     "-std=c++2b",
+    //     "-g",
+    //     "${file}",
+    //     "-o",
+    //     "${workspaceFolder}/a.exe"
+    //   ],
+    //   "group": {
+    //     "kind": "build",
+    //     "isDefault": true
+    //   }
+    // },
+    // {
+    //   "label": "clear terminal and build (C++)",
+    //   "dependsOn": [
+    //     "clear terminal",
+    //     "build active file (C++)"
+    //   ],
+    //   "group": {
+    //     "kind": "build",
+    //     "isDefault": true
+    //   }
+    // },
     {
-      "label": "build active file (C++)",
+      "label": "build active file (C)",
       "type": "shell",
-      "command": "clang++",
+      "command": "clang",
       "args": [
-        "-std=c++2b",
+        "-std=c17",
         "-g",
         "${file}",
         "-o",
-        "${workspaceFolder}/a.exe"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "clear terminal and build (C++)",
-      "dependsOn": [
-        "clear terminal",
-        "build active file (C++)"
+        "${workspaceFolder}/a.out"
       ],
       "group": {
         "kind": "build",

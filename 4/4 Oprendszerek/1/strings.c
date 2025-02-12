@@ -9,15 +9,17 @@ int length(char * str)
  while (*str++!=0)l++; //*str points to the next character
  return l;
 }
+
 int main()
 {
               //char str1[80]; //it would be an 80 characters long empty "string", - it is empty 
-  char str1[]="Hello world"; //it's length is the length of the text
+  char str1[]="Hello world\0"; //it's length is the length of the text
   printf("The content of variable str1: \'%s\'\n",str1); 
   //1. parameter formatstring, next parameter(s) variables
   //%s = string, %i = integer \n = new line e.g.
   
-  printf("The length of variable str1 \'%s\'\n  %i (with length()), %i (with strlen())\n",str1,length(str1),strlen(str1)); 
+  printf("The length of variable str1 \'%s\'\n  %i (with length()), %i (with strlen()), %i (with sizeof())\n",
+    str1,length(str1),strlen(str1),sizeof(str1) / sizeof(char));
   //The end of a string is a 0 character 
   //There is the function strlen!! in string.h
   

@@ -21,7 +21,16 @@
       "program": "${workspaceFolder}/a.exe",
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
-      "preLaunchTask": "clear terminal and build (C++)"
+      "preLaunchTask": "build active file (C)"
     }
+    // {
+    //   "type": "lldb",
+    //   "request": "launch",
+    //   "name": "Debug active file",
+    //   "program": "${workspaceFolder}/a.exe",
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "preLaunchTask": "clear terminal and build (C++)"
+    // }
   ]
 }
