@@ -1,0 +1,23 @@
+{
+  "name": "1",
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "dev": "bun --hot index.ts",
+    "lint": "eslint . --fix",
+    "studio": "drizzle-kit studio"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "drizzle-orm": "^0.39.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.2.0",
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.30.4",
+    "eslint": "^9.20.1"
+  }
+}
