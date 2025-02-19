@@ -29,9 +29,8 @@ btn.addEventListener('click', () => {
 })
 
 function resetAllSelection() {
-  for (const child of list.children) {
+  for (const child of list.children)
     child.style.color = 'black'
-  }
 }
 
 function updateAvg() {

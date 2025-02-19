@@ -65,9 +65,8 @@ async function startGame() {
       console.error(resp.error.message)
       return
     }
-    if (resp.data && resp.data.games[0]) {
+    if (resp.data && resp.data.games[0])
       renderGame(resp.data.games[0])
-    }
   })
 }
 
@@ -76,9 +75,9 @@ function tryReadInput() {
     || name2Text.value === ''
     || sizeText.value === ''
     || Number.parseInt(sizeText.value) < 15
-    || Number.parseInt(sizeText.value) > 25) {
+    || Number.parseInt(sizeText.value) > 25)
     return false
-  }
+
   return true
 }
 
@@ -98,9 +97,8 @@ function renderGame(gameState: GameState) {
     }
   }
 
-  if (gameState.winner || gameState.tie) {
+  if (gameState.winner || gameState.tie)
     table.removeEventListener('click', clickTile)
-  }
 }
 
 async function clickTile(e: Event) {

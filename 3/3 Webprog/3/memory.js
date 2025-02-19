@@ -1,5 +1,5 @@
 let X
-let arr = []
+const arr = []
 let players
 
 const btn = document.getElementById('btn')

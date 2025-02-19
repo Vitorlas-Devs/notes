@@ -1,45 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="modulepreload" href="main.js" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="modulepreload" href="main.js">
-</head>
+  <body>
+    <input id="loc" type="text" />
+    <button id="locbtn">Get Location</button>
+    <input id="lat" type="text" />
+    <input id="lon" type="text" />
+    <button id="wtrbtn">Get Weather</button>
 
-<body>
-  <input id="loc" type="text">
-  <button id="locbtn">Get Location</button>
-  <input id="lat" type="text">
-  <input id="lon" type="text">
-  <button id="wtrbtn">Get Weather</button>
+    <div id="weather" hidden>
+      <table id="table" style="text-align: center">
+        <tr>
+          <td>Nap</td>
+        </tr>
+        <tr>
+          <td>Nap</td>
+        </tr>
+        <tr>
+          <td>Ikon</td>
+        </tr>
+        <tr>
+          <td>Leírás</td>
+        </tr>
+        <tr>
+          <td>Hőmérséklet</td>
+        </tr>
+        <tr>
+          <td>Idő</td>
+        </tr>
+      </table>
+    </div>
 
-
-  <div id="weather" hidden>
-    <table id="table" style="text-align: center;">
-      <tr>
-        <td>Nap</td>
-      </tr>
-      <tr>
-        <td>Nap</td>
-      </tr>
-      <tr>
-        <td>Ikon</td>
-      </tr>
-      <tr>
-        <td>Leírás</td>
-      </tr>
-      <tr>
-        <td>Hőmérséklet</td>
-      </tr>
-      <tr>
-        <td>Idő</td>
-      </tr>
-    </table>
-  </div>
-
-  <script type="module" src="main.js"></script>
-</body>
-
+    <script type="module" src="main.js"></script>
+  </body>
 </html>

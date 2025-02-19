@@ -7,14 +7,13 @@ function generateTable() {
   const n = num.value
   let row = table.insertRow()
   row.inserCell()
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < n; i++)
     row.inserCell().textContent = i + 1
-  }
+
   for (let i = 0; i < n; i++) {
     row = table.insertRow()
-    for (let j = 0; j < n; j++) {
+    for (let j = 0; j < n; j++)
       row.inserCell().textContent = i * j
-    }
   }
 }
 

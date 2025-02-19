@@ -7,4 +7,7 @@ export default antfu({
   },
   ignores: ['**/vendor/**'],
   solid: true,
+  formatters: {
+    html: true,
+  },
 })

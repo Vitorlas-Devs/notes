@@ -4,8 +4,6 @@ export default function Mouse() {
   const [p, setP] = createSignal(0)
   const [time, setTime] = createSignal(0)
 
-  
-
   return (
     <>
       <p>

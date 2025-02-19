@@ -1,50 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="modulepreload" href="main.js" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="modulepreload" href="main.js">
-</head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Magyar</th>
+          <th>Angol</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul></ul>
+          </td>
+          <td>
+            <ul></ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="column">
+              <input id="text1" type="text" />
+              <button id="add1">Add</button>
+            </div>
+          </td>
+          <td>
+            <div class="column">
+              <input id="text2" type="text" />
+              <button id="add2">Add</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-<body>
-  <table>
-    <thead>
-      <tr>
-        <th>Magyar</th>
-        <th>Angol</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <ul></ul>
-        </td>
-        <td>
-          <ul></ul>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="column">
-            <input id="text1" type="text">
-            <button id="add1">Add</button>
-          </div>
-        </td>
-        <td>
-          <div class="column">
-            <input id="text2" type="text">
-            <button id="add2">Add</button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <script type="module" src="main.js"></script>
-</body>
-
+    <script type="module" src="main.js"></script>
+  </body>
 </html>

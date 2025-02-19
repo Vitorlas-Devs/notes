@@ -25,9 +25,8 @@ document.querySelector('#start').addEventListener('click', () => {
 
   for (let i = 0; i < size; i++) {
     const row = table.insertRow()
-    for (let j = 0; j < size; j++) {
+    for (let j = 0; j < size; j++)
       row.insertCell()
-    }
   }
 })
 
@@ -36,9 +35,8 @@ function tryReadInput() {
     || name2Text.value === ''
     || sizeText.value === ''
     || sizeText.value < 15
-    || sizeText.value > 25) {
+    || sizeText.value > 25)
     return false
-  }
 
   size = Number.parseInt(sizeText.value)
   name1 = name1Text.value
