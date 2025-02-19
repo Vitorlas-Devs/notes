@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "bun --hot index.ts",
     "lint": "eslint . --fix",
-    "studio": "drizzle-kit studio"
+    "studio": "npx drizzle-kit studio"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -15,7 +15,7 @@
     "drizzle-orm": "^0.39.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.2.0",
+    "@antfu/eslint-config": "^4.3.0",
     "@types/bun": "latest",
     "drizzle-kit": "^0.30.4",
     "eslint": "^9.20.1"
