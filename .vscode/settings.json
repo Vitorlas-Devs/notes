@@ -12,10 +12,9 @@
   "cmake.configureArgs": [
     "-DCMAKE_CXX_COMPILER=clang++"
   ],
-  "clangd.path": "C:/Users/hegyi/Documents/clangd_19.1.2/bin/clangd.exe",
   "clangd.arguments": [
     "--header-insertion=never",
-    "--compile-commands-dir=${workspaceFolder}/build"
+    "--clang-tidy"
   ],
   "C_Cpp.codeAnalysis.runAutomatically": true,
   "rust-analyzer.linkedProjects": [
@@ -40,7 +39,7 @@
   "python.analysis.autoImportCompletions": true,
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",

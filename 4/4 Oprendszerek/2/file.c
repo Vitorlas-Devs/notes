@@ -5,13 +5,14 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <sys/types.h> //open
-#include <unistd.h>    //read,write,close
+#include <time.h>
+#include <unistd.h> //read,write,close
 
 int main(int argc, char **argv) {
-  if (argc != 3) {
-    perror(
-        "You have to use program with two arguments, the file names copy_from "
-        "copy_to");
+  srand(time(NULL)); // the starting value of random number generation
+
+  if (argc != 2) {
+    perror("You have to use program with one argument, the file name\n");
     exit(1);
   }
   int f, g;
@@ -29,7 +30,8 @@ int main(int argc, char **argv) {
   // There is errno variable in which there is the number of error --
   // if (errno!=0) there is an error
 
-  g = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+  g = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+
   // the three parameter long version of open - it can create the file if it
   // doesnt exist there is a creat function as well -
   // creat(filename,permissions); O_TRUNC = if it existed, clear the content,
@@ -41,17 +43,26 @@ int main(int argc, char **argv) {
     exit(1);
   }
 
-  char c;
+  for (int i = 0; i < 10; i++) {
+    int r = rand() % 100; // number between 0-99
+    if (write(g, &r, sizeof(r)) != sizeof(r)) {
+      perror("Error writing to file\n");
+      exit(1);
+    }
+  }
+
+  int c;
   while (read(f, &c, sizeof(c))) {
     // read gives back the number of bytes
     // 1. parameter the file descriptor
     // 2. parameter the address of variable, we read into
     // 3. parameter the number of bytes we want to read in
-    printf("%c", c); // we prints out the content of the file on the screen
-    if (write(g, &c, sizeof(c)) != sizeof(c)) {
-      perror("There is a mistake in writing\n");
-      exit(1);
-    }
+    printf("Writing: %d\n",
+           c); // we prints out the content of the file on the screen
+    // if (write(g, &c, sizeof(c)) != sizeof(c)) {
+    //   perror("There is a mistake in writing\n");
+    //   exit(1);
+    // }
     // write gives back the number of written bytes
     // 1. parameter the file descriptor
     // 2. parameter the address of variable we want to write out
