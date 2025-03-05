@@ -1,0 +1,32 @@
+#minion-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+minion-element {
+    flex: 0 0 calc(25% - 15px);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    #minion-catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #minion-catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #minion-catalog {
+        grid-template-columns: 1fr;
+    }
+}
