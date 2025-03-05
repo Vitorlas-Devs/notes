@@ -1,0 +1,49 @@
+body {
+  background: #dcdcdc;
+
+}
+
+h1 {
+  font-family: 'Delicious Handrawn', cursive;
+  color: #545454;
+  font-size: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+gradient-box {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+gradient-box:hover {
+  transform: scale(110%);
+  transition: transform 0.2s;
+}
+
+gradient-box:active {
+  transform: scale(100%);
+  transition: transform 0.2s;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+}
