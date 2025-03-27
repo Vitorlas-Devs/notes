@@ -61,7 +61,15 @@ on d.fizetes between cat.also and cat.felso
 having count(d.dnev) = 3;
 
 -- 7. osztályok neve és telephelye, ahol van 1-es kategóriás dolgozó
--- ???
+select o.onev,
+       o.telephely
+  from osztaly o
+natural join dolgozo d
+  join fiz_kategoria cat
+on d.fizetes between cat.also and cat.felso
+ where d.kategoria = 1
+ group by o.onev,
+          o.telephely;
 
 -- 8. kik szeretnek minden gyümölcsöt
 select s.nev
