@@ -6,7 +6,7 @@ export default antfu({
     'curly': ['warn', 'multi-or-nest', 'consistent'],
   },
   ignores: ['**/vendor/**'],
-  solid: true,
+  react: true,
   formatters: {
     html: true,
   },
