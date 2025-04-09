@@ -12,11 +12,11 @@ int main(int argc, char *argv[]) {
   int pid;
   key_t kulcs;
   int oszt_mem_id;
-  char *s;
+  int *s;
   // a parancs nevevel es az 1 verzio szammal kulcs generalas
   kulcs = ftok(argv[0], 1);
   // osztott memoria letrehozasa, irasra olvasasra, 500 bajt mrettel
-  oszt_mem_id = shmget(kulcs, 500, IPC_CREAT | S_IRUSR | S_IWUSR);
+  oszt_mem_id = shmget(kulcs, sizeof(int) * 10, IPC_CREAT | S_IRUSR | S_IWUSR);
   // csatlakozunk az osztott memoriahoz,
   // a 2. parameter akkor kell, ha sajat cimhez akarjuk illeszteni
   // a 3. paraméter lehet SHM_RDONLY, ekkor csak read van
@@ -24,9 +24,12 @@ int main(int argc, char *argv[]) {
   //
   pid = fork();
   if (pid > 0) {
-    char buffer[] = "Hajra Fradi! \n";
+    // char buffer[] = "Hajra Fradi! \n";
+    for (int i = 0; i < 10; i++) {
+      // strcpy(s, buffer);
+      s[i] = i;
+    }
     // beirunk a memoriaba
-    strcpy(s, buffer);
     // elengedjuk az osztott memoriat
     shmdt(s);
     //	s[0]='B';  //ez segmentation fault hibat ad
@@ -37,7 +40,13 @@ int main(int argc, char *argv[]) {
     shmctl(oszt_mem_id, IPC_RMID, NULL);
   } else if (pid == 0) {
     sleep(1);
-    printf("A gyerek ezt olvasta az osztott memoriabol: %s", s);
+    // printf("A gyerek ezt olvasta az osztott memoriabol: %s", s);
+    int sum = 0;
+    for (int i = 0; i < 10; i++) {
+      printf("Read: %d\n", s[i]);
+      sum += s[i];
+    }
+    printf("Sum: %d\n", sum);
     // gyerek is elengedi
     shmdt(s);
   }
