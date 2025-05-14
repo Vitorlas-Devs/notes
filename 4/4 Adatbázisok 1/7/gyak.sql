@@ -14,6 +14,8 @@ create table employees (
          references dept ( id )
 );
 
+describe employees;
+
 create table bosses (
    name varchar(20)
 )
@@ -21,19 +23,22 @@ create table bosses (
       select dnev
         from dolgozo
        where dkod in (
-         select dkod
+         select distinct fonoke
            from dolgozo
-          where dkod is not null
+          where fonoke is not null
       );
 
 create or replace view boss_ids as
    select dkod
      from dolgozo
     where dkod in (
-      select dkod
+      select distinct fonoke
         from dolgozo
-       where dkod is not null
+       where fonoke is not null
    );
+
+select *
+  from boss_ids;
 
 drop view boss_ids;
 
