@@ -14,15 +14,15 @@
     //   "mainClass": "Arkanoid.Arkanoid",
     //   "cwd": "${workspaceFolder}/3/3 Progtech/12/Arkanoid"
     // },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug active file",
-      "program": "${workspaceFolder}/a.exe",
-      "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal",
-      "preLaunchTask": "build active file (C)"
-    }
+    // {
+    //   "type": "lldb",
+    //   "request": "launch",
+    //   "name": "Debug active file",
+    //   "program": "${workspaceFolder}/a.exe",
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "preLaunchTask": "build active file (C)"
+    // }
     // {
     //   "type": "lldb",
     //   "request": "launch",
