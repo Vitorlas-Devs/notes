@@ -55,21 +55,50 @@ select oazon,
  group by oazon
 having count(*) >= 4;
 
-
 -- 8. Adjuk meg az átlagfizetést és telephelyet azokon az osztályokon, ahol legalább 4-en dolgoznak.
-
+select telephely,
+       avg(fizetes)
+  from dolgozo
+natural join osztaly
+having count(*) >= 4
+ group by telephely;
 
 -- 9. Adjuk meg azon osztályok nevét és telephelyét, ahol az átlagfizetés nagyobb mint 2000. (onev, telephely)
-
+select onev,
+       telephely,
+       avg(fizetes)
+  from dolgozo
+natural join osztaly
+ group by onev,
+          telephely
+having avg(fizetes) > 2000;
 
 -- 10. Adjuk meg azokat a fizetési kategóriákat, amelybe pontosan 3 dolgozó fizetése esik.
-
+select kategoria,
+       count(dkod)
+  from fiz_kategoria
+  join dolgozo
+on fizetes between also and felso
+ group by kategoria
+having count(dkod) > 3;
 
 -- 12. Adjuk meg azokat a fizetési kategóriákat, amelyekbe eső dolgozók mindannyian ugyanazon az osztályon dolgoznak.
-
+select kategoria
+  from fiz_kategoria
+  join dolgozo
+on fizetes between also and felso
+ group by kategoria
+having count(distinct oazon) = 1;
 
 -- 13. Adjuk meg azon osztályok nevét és telephelyét, amelyeknek van 1-es fizetési kategóriájú dolgozója.
-
+select onev,
+       telephely
+  from fiz_kategoria
+  join dolgozo
+on fizetes between also and felso
+natural join osztaly
+ group by onev,
+          telephely; -- todo
 
 -- 14. Adjuk meg azon osztályok nevét és telephelyét, amelyeknek legalább 2 fő 1-es fiz. kategóriájú dolgozója van.
 
